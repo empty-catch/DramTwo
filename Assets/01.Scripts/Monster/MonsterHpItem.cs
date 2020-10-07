@@ -8,14 +8,9 @@ public class MonsterHpItem : MonoBehaviour {
         image = gameObject.GetComponent<Image>();
     }
 
-    public void OnEnable() {
-           
-    }
-
-    
-    // TODO : 제스쳐 받아와서 설정
-    public void SettingGesture() {
-        
+    // TODO : enum으로 변경
+    public void SettingGesture(string key) {
+        image.sprite = MonsterGestureResources.instance.GestureItems[key];
     }
 
     public void ResetObject() {
