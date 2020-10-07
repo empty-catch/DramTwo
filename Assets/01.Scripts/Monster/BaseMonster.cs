@@ -32,6 +32,11 @@ public abstract class BaseMonster : MonoBehaviour {
     
     private void Awake() {
         hpItems = gameObject.GetComponentsInChildren<MonsterHpItem>(true);
+        
+        var imageCanvas = gameObject.GetComponentInChildren<Canvas>();
+        if (imageCanvas.worldCamera == null) {
+            imageCanvas.worldCamera = Camera.main;
+        }
     }
 
     public void ActiveMonster() {
@@ -47,11 +52,18 @@ public abstract class BaseMonster : MonoBehaviour {
         var direction = (PlayerCharacterController.instance.gameObject.transform.position -
                         gameObject.transform.position).normalized;
 
-        gameObject.transform.Translate(direction * speed);
+        gameObject.transform.Translate(direction * speed * Time.deltaTime);
     }
 
     public virtual void Attack() { }
-    public virtual void GetDamaged(int damage) { }
+
+    public virtual void GetDamaged(int damage) {
+        hp -= damage;
+        
+        if ( hp <= 0) {
+            Death();
+        }
+    }
     
     public void Death() {
         gameObject.SetActive(true);
