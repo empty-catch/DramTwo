@@ -35,7 +35,7 @@ public class GestureDrawer : MonoBehaviour {
 
     private void Update() {
         if (Input.GetMouseButtonDown(0)) {
-            Enable();
+            ResetDrawer();
         }
         else if (Input.GetMouseButton(0)) {
             var position = Input.mousePosition;
@@ -57,11 +57,11 @@ public class GestureDrawer : MonoBehaviour {
             //     var result = PointCloudRecognizer.Classify(candidate, gestures);
             // }
 
-            Disable();
+            FadeOut();
         }
     }
 
-    private void Enable() {
+    private void ResetDrawer() {
         points.Clear();
         positionCount = 0;
         renderer.positionCount = 0;
@@ -75,15 +75,8 @@ public class GestureDrawer : MonoBehaviour {
         handle.color = Color.white;
     }
 
-    private void Disable() {
-        var rendererColor = renderer.startColor;
-        var transparentColor = rendererColor * new Color(1f, 1f, 1f, 0f);
-        var startColor2 = new Color2(rendererColor, rendererColor);
-        var endColor2 = new Color2(transparentColor, transparentColor);
-
-        rendererTweener = renderer.DOColor(startColor2, endColor2, fadeDuration)
-                                  .OnComplete(() => renderer.enabled = false);
-        handleTweener = handle.DOFade(0f, fadeDuration)
-                              .OnComplete(() => handle.enabled = false);
+    private void FadeOut() {
+        rendererTweener = renderer.DOFade(0f, fadeDuration).OnComplete(() => renderer.enabled = false);
+        handleTweener = handle.DOFade(0f, fadeDuration).OnComplete(() => handle.enabled = false);
     }
 }
