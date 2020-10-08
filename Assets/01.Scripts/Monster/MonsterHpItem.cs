@@ -9,7 +9,7 @@ public class MonsterHpItem : MonoBehaviour {
     }
 
     // TODO : enum으로 변경
-    public void SettingGesture(string key) {
+    public void SettingGesture(Gesture key) {
         image.sprite = MonsterGestureResources.instance.GestureItems[key];
     }
 
