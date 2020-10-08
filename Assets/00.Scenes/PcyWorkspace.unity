@@ -411,6 +411,7 @@ MonoBehaviour:
   renderer: {fileID: 2047938635}
   handle: {fileID: 711152041}
   fadeDuration: 0.5
+  dotsDistance: 0.01
   xmls:
   - {fileID: 4900000, guid: 882dd7ac8cc73ef41a66bc300bb2485b, type: 3}
   - {fileID: 4900000, guid: e19d00785c86ee246b764ebd585cacfc, type: 3}

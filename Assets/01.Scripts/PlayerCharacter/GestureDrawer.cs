@@ -15,6 +15,9 @@ public class GestureDrawer : MonoBehaviour {
     private float fadeDuration;
 
     [SerializeField]
+    private float dotsDistance;
+
+    [SerializeField]
     private TextAsset[] xmls;
 
     private readonly List<Point> points = new List<Point>();
@@ -40,7 +43,9 @@ public class GestureDrawer : MonoBehaviour {
         else if (Input.GetMouseButton(0)) {
             var position = Input.mousePosition;
             var worldPoint = camera.ScreenToWorldPoint(new Vector3(position.x, position.y, 10));
-            if (renderer.positionCount > 0 && worldPoint == renderer.GetPosition(positionCount - 1)) {
+            handle.rectTransform.position = worldPoint;
+            if (renderer.positionCount > 0 &&
+                (worldPoint - renderer.GetPosition(positionCount - 1)).sqrMagnitude < dotsDistance) {
                 return;
             }
 
@@ -48,7 +53,6 @@ public class GestureDrawer : MonoBehaviour {
             positionCount++;
             renderer.positionCount = positionCount;
             renderer.SetPosition(positionCount - 1, worldPoint);
-            handle.rectTransform.position = worldPoint;
         }
         else if (Input.GetMouseButtonUp(0)) {
             // if (positionCount > 10 || positionCount > 1 &&

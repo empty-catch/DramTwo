@@ -27,8 +27,8 @@
         <option value="$PROJECT_DIR$/Assets/01.Scripts/Monster/MonsterGestureResources.cs" />
         <option value="$PROJECT_DIR$/Assets/01.Scripts/Monster/MonsterHpItem.cs" />
         <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureType.cs" />
-        <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/01.Scripts/System/Extensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureDrawer.cs" />
       </list>
     </option>
   </component>
