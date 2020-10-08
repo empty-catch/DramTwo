@@ -1,4 +1,4 @@
-﻿public enum Gesture {
+﻿public enum GestureType {
     Horizontal,
     Vertical,
     UpArrow,

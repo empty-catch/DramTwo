@@ -14,8 +14,8 @@
             <e p="MonsterHpItem.cs" t="Include" />
           </e>
           <e p="PlayerCharacter" t="Include">
-            <e p="Gesture.cs" t="Include" />
             <e p="GestureDrawer.cs" t="Include" />
+            <e p="GestureType.cs" t="Include" />
             <e p="PlayerCharacterController.cs" t="Include" />
           </e>
           <e p="System" t="Include">

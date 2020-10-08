@@ -20,9 +20,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/01.Scripts/System/asdf.cs" />
-        <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
         <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/Gesture.cs" />
+        <option value="$PROJECT_DIR$/Assets/01.Scripts/Monster/MonsterGestureResources.cs" />
+        <option value="$PROJECT_DIR$/Assets/01.Scripts/Monster/MonsterHpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureType.cs" />
+        <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureDrawer.cs" />
       </list>
     </option>
   </component>
@@ -34,7 +37,7 @@
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="RiderCSharpFileTemplatesSettingsId" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -63,10 +66,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="195" y="529" width="1207" height="710" key="SettingsEditor" timestamp="1602160087916">
+    <state x="195" y="529" width="1207" height="710" key="SettingsEditor" timestamp="1602162556243">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="195" y="529" width="1207" height="710" key="SettingsEditor/0.0.2560.1409/-1440.-182.1152.2048@0.0.2560.1409" timestamp="1602160087916" />
+    <state x="195" y="529" width="1207" height="710" key="SettingsEditor/0.0.2560.1409/-1440.-182.1152.2048@0.0.2560.1409" timestamp="1602162556243" />
     <state x="1149" y="549" key="cloudConfig.SelfSettingsDialog" timestamp="1602082906232">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
