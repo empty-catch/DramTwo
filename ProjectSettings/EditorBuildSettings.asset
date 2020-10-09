@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/00.Scenes/PcyWorkspace.unity
+    guid: cf1063fb6ee82cf4abe432f993fd27d7
+  - enabled: 1
     path: Assets/00.Scenes/InGameScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
