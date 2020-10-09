@@ -4,6 +4,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 using PDollarGestureRecognizer;
+using UnityEngine.Events;
 
 public class GestureDrawer : MonoBehaviour {
     [SerializeField]
@@ -27,10 +28,14 @@ public class GestureDrawer : MonoBehaviour {
     [SerializeField]
     private GestureInfo[] gestureInfos;
 
+    [SerializeField]
+    private UnityEvent<GestureType> onDrawn;
+
     private readonly List<Point> points = new List<Point>();
     private new Camera camera;
     private Tweener tweener;
 
+    private GestureType gestureType;
     private Vector3 position;
     private Vector3 worldPosition;
     private int positionCount;
@@ -63,6 +68,7 @@ public class GestureDrawer : MonoBehaviour {
             ColorRenderer(result);
         }
         else if (Input.GetMouseButtonUp(0)) {
+            onDrawn?.Invoke(gestureType);
             tweener.Kill();
             FadeOut();
         }
@@ -83,14 +89,15 @@ public class GestureDrawer : MonoBehaviour {
 
     private void ColorRenderer(Result result) {
         tweener.ChangeStartValue(new Color2(renderer.startColor, renderer.endColor));
-
         if (result.GestureClass == "No match" || result.Score < 0.5f) {
             tweener.ChangeEndValue(new Color2(Color.white, Color.white)).Restart();
+            gestureType = GestureType.None;
         }
         else {
             var gestureInfo = gestureInfos.First(info => info.Type.ToString() == result.GestureClass);
             var color = Color.Lerp(Color.white, gestureInfo.Color, result.Score);
             tweener.ChangeEndValue(new Color2(color, color)).Restart();
+            gestureType = gestureInfo.Type;
         }
     }
 
@@ -98,6 +105,7 @@ public class GestureDrawer : MonoBehaviour {
         points.Clear();
         positionCount = 0;
         renderer.positionCount = 0;
+        gestureType = GestureType.None;
     }
 
     private void ResetRenderer() {

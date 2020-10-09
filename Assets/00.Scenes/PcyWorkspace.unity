@@ -421,6 +421,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c82a4fe185d316343b8ce5b575767a4f, type: 2}
   - {fileID: 11400000, guid: bcc05b175d885c44f8150fc1970b9429, type: 2}
   - {fileID: 11400000, guid: 845fc5ab0c623644cb1b41cc22470903, type: 2}
+  onDrawn:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!120 &2047938635
 LineRenderer:
   m_ObjectHideFlags: 0
