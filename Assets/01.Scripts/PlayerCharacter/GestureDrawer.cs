@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿#pragma warning disable CS0649
+
 using System.Linq;
-using DG.Tweening;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using PDollarGestureRecognizer;
 using UnityEngine.Events;
+using DG.Tweening;
+using PDollarGestureRecognizer;
 
 public class GestureDrawer : MonoBehaviour {
     [SerializeField]
@@ -68,7 +70,10 @@ public class GestureDrawer : MonoBehaviour {
             ColorRenderer(result);
         }
         else if (Input.GetMouseButtonUp(0)) {
-            onDrawn?.Invoke(gestureType);
+            if (gestureType != GestureType.None) {
+                onDrawn?.Invoke(gestureType);
+            }
+
             tweener.Kill();
             FadeOut();
         }
