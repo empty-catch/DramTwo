@@ -1,4 +1,5 @@
 ﻿public enum GestureType {
+    None,
     Horizontal,
     Vertical,
     UpArrow,

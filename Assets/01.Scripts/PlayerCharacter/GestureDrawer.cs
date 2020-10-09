@@ -53,6 +53,8 @@ public class GestureDrawer : MonoBehaviour {
             positionCount++;
             renderer.positionCount = positionCount;
             renderer.SetPosition(positionCount - 1, worldPoint);
+
+            var candidate = new Gesture(points.ToArray());
         }
         else if (Input.GetMouseButtonUp(0)) {
             // if (positionCount > 10 || positionCount > 1 &&
