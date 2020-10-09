@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d013bdf8dfd41359edb5c64c04ac7e9, type: 3}
+  m_Name: UpArrow
+  m_EditorClassIdentifier: 
+  xml: {fileID: 4900000, guid: 7ee78bb231243884991dd54c564c9bf5, type: 3}
+  type: 3
+  color: {r: 0, g: 1, b: 0, a: 1}

@@ -412,12 +412,13 @@ MonoBehaviour:
   handle: {fileID: 711152041}
   fadeDuration: 0.5
   dotsDistance: 0.01
-  xmls:
-  - {fileID: 4900000, guid: 882dd7ac8cc73ef41a66bc300bb2485b, type: 3}
-  - {fileID: 4900000, guid: e19d00785c86ee246b764ebd585cacfc, type: 3}
-  - {fileID: 4900000, guid: 7ee78bb231243884991dd54c564c9bf5, type: 3}
-  - {fileID: 4900000, guid: 079403e3756762349abfe32797d43b17, type: 3}
-  - {fileID: 4900000, guid: af545c4d908be5b4a91b2f7f30719ad7, type: 3}
+  drawerFadeDuration: 0.2
+  gestureInfos:
+  - {fileID: 11400000, guid: 1d4d9193184c9634d8c8bc0c3199c6f0, type: 2}
+  - {fileID: 11400000, guid: 8e073e18a235ed149b86e7826c600638, type: 2}
+  - {fileID: 11400000, guid: c82a4fe185d316343b8ce5b575767a4f, type: 2}
+  - {fileID: 11400000, guid: bcc05b175d885c44f8150fc1970b9429, type: 2}
+  - {fileID: 11400000, guid: 845fc5ab0c623644cb1b41cc22470903, type: 2}
 --- !u!120 &2047938635
 LineRenderer:
   m_ObjectHideFlags: 0

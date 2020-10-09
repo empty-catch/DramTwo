@@ -14,6 +14,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/01.Scripts/System/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9584DE34-44B5-42AB-BB1A-D4BB43A7137F/81/3a75a544/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348FB5E-CC9E-4E68-9F37-F7D7FADAEA9A/67/29e5aae4/ShortcutExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348FB5E-CC9E-4E68-9F37-F7D7FADAEA9A/03/f802c02c/Tweener.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9584DE34-44B5-42AB-BB1A-D4BB43A7137F/a1/8a89c10d/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348FB5E-CC9E-4E68-9F37-F7D7FADAEA9A/62/2cd7ebbc/Color2.cs" root0="SKIP_HIGHLIGHTING" />
@@ -26,9 +27,11 @@
         <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/Gesture.cs" />
         <option value="$PROJECT_DIR$/Assets/01.Scripts/Monster/MonsterGestureResources.cs" />
         <option value="$PROJECT_DIR$/Assets/01.Scripts/Monster/MonsterHpItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/PDollar/Scene/Scripts/PDollarGestureRecognizer/PointCloudRecognizer.cs" />
+        <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/01.Scripts/System/Extensions.cs" />
         <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureDrawer.cs" />
-        <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureType.cs" />
       </list>
     </option>
   </component>
@@ -77,13 +80,13 @@
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
     <state x="1149" y="549" key="cloudConfig.SelfSettingsDialog/0.0.2560.1409/-1440.-182.1152.2048@0.0.2560.1409" timestamp="1602082906232" />
-    <state x="940" y="437" width="681" height="536" key="find.popup" timestamp="1602159913318">
+    <state x="940" y="437" width="683" height="536" key="find.popup" timestamp="1602231485748">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="940" y="437" width="681" height="536" key="find.popup/0.0.2560.1409/-1440.-182.1152.2048@0.0.2560.1409" timestamp="1602159913318" />
-    <state x="943" y="318" width="672" height="678" key="search.everywhere.popup" timestamp="1602169120577">
+    <state x="940" y="437" width="683" height="536" key="find.popup/0.0.2560.1409/-1440.-182.1152.2048@0.0.2560.1409" timestamp="1602231485748" />
+    <state x="943" y="318" width="672" height="678" key="search.everywhere.popup" timestamp="1602231771984">
       <screen x="0" y="0" width="2560" height="1409" />
     </state>
-    <state x="943" y="318" width="672" height="678" key="search.everywhere.popup/0.0.2560.1409/-1440.-182.1152.2048@0.0.2560.1409" timestamp="1602169120577" />
+    <state x="943" y="318" width="672" height="678" key="search.everywhere.popup/0.0.2560.1409/-1440.-182.1152.2048@0.0.2560.1409" timestamp="1602231771984" />
   </component>
 </project>

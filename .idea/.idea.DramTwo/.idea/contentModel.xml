@@ -15,6 +15,7 @@
           </e>
           <e p="PlayerCharacter" t="Include">
             <e p="GestureDrawer.cs" t="Include" />
+            <e p="GestureInfo.cs" t="Include" />
             <e p="GestureType.cs" t="Include" />
             <e p="PlayerCharacterController.cs" t="Include" />
           </e>
@@ -23,20 +24,12 @@
           </e>
         </e>
         <e p="05.Resources" t="Include">
-          <e p="Ability" t="Include">
-            <e p="Circle-132328873048606222.xml" t="Include" />
-            <e p="Flame-132340998624751891.xml" t="Include" />
-            <e p="Ice-132340998814896117.xml" t="Include" />
-            <e p="Wind-132340998403082848.xml" t="Include" />
-            <e p="Zigzag-132328872645410796.xml" t="Include" />
-          </e>
-          <e p="Normal" t="Include">
-            <e p="Down-132328872013567840.xml" t="Include" />
+          <e p="XML" t="Include">
             <e p="DownArrow-132328872233727975.xml" t="Include" />
             <e p="Horizontal-132328040452972834.xml" t="Include" />
-            <e p="Up-132328871778377792.xml" t="Include" />
             <e p="UpArrow-132328872454736308.xml" t="Include" />
             <e p="Vertical-132328871384559777.xml" t="Include" />
+            <e p="Zigzag-132328872645410796.xml" t="Include" />
           </e>
         </e>
         <e p="NaughtyAttributes" t="Include">
@@ -214,15 +207,17 @@
                 </e>
               </e>
             </e>
-            <e p="Scripts" t="Include">
-              <e p="Demo.cs" t="Include" />
-              <e p="PDollarGestureRecognizer" t="Include">
-                <e p="Geometry.cs" t="Include" />
-                <e p="Gesture.cs" t="Include" />
-                <e p="GestureIO.cs" t="Include" />
-                <e p="Point.cs" t="Include" />
-                <e p="PointCloudRecognizer.cs" t="Include" />
-                <e p="Result.cs" t="Include" />
+            <e p="Scene" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Demo.cs" t="Include" />
+                <e p="PDollarGestureRecognizer" t="Include">
+                  <e p="Geometry.cs" t="Include" />
+                  <e p="Gesture.cs" t="Include" />
+                  <e p="GestureIO.cs" t="Include" />
+                  <e p="Point.cs" t="Include" />
+                  <e p="PointCloudRecognizer.cs" t="Include" />
+                  <e p="Result.cs" t="Include" />
+                </e>
               </e>
             </e>
           </e>
