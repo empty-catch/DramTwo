@@ -5,33 +5,7 @@
     <e p="C:\Users\Tempus\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_DramTwo.-1228283573.00" t="ExcludeRecursive" />
     <e p="C:\Users\Tempus\Desktop\DramTwo" t="IncludeRecursive">
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
-      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="01.Scripts" t="Include">
-          <e p="Monster" t="Include">
-            <e p="BaseMonster.cs" t="Include" />
-            <e p="MonsterGestureResources.cs" t="Include" />
-            <e p="MonsterHpItem.cs" t="Include" />
-          </e>
-          <e p="PlayerCharacter" t="Include">
-            <e p="GestureDrawer.cs" t="Include" />
-            <e p="GestureInfo.cs" t="Include" />
-            <e p="GestureType.cs" t="Include" />
-            <e p="PlayerCharacterController.cs" t="Include" />
-          </e>
-          <e p="System" t="Include">
-            <e p="Extensions.cs" t="Include" />
-          </e>
-        </e>
-        <e p="05.Resources" t="Include">
-          <e p="XML" t="Include">
-            <e p="DownArrow-132328872233727975.xml" t="Include" />
-            <e p="Horizontal-132328040452972834.xml" t="Include" />
-            <e p="UpArrow-132328872454736308.xml" t="Include" />
-            <e p="Vertical-132328871384559777.xml" t="Include" />
-            <e p="Zigzag-132328872645410796.xml" t="Include" />
-          </e>
-        </e>
         <e p="NaughtyAttributes" t="Include">
           <e p="Scripts" t="Include">
             <e p="Core" t="Include">
