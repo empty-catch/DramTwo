@@ -62,26 +62,24 @@ public class GestureDrawer : MonoBehaviour {
 
             var candidate = new Gesture(points.ToArray());
             var result = PointCloudRecognizer.Classify(candidate, Gestures);
-            tweener.ChangeStartValue(new Color2(renderer.startColor, renderer.endColor));
-
-            if (result.GestureClass == "No match" || result.Score < 0.5f) {
-                tweener.ChangeEndValue(new Color2(Color.white, Color.white)).Restart();
-            }
-            else {
-                var gestureInfo = gestureInfos.First(info => info.Type.ToString() == result.GestureClass);
-                var color = Color.Lerp(Color.white, gestureInfo.Color, (result.Score - 0.5f) * 2f);
-                tweener.ChangeEndValue(new Color2(color, color)).Restart();
-                // renderer.SetColor(color);
-            }
+            ColorRenderer(result);
         }
         else if (Input.GetMouseButtonUp(0)) {
-            // if (positionCount > 10 || positionCount > 1 &&
-            //     (renderer.GetPosition(0) - renderer.GetPosition(positionCount - 1)).sqrMagnitude >= 0.5f) {
-            //     var candidate = new Gesture(points.ToArray());
-            //     var result = PointCloudRecognizer.Classify(candidate, gestures);
-            // }
             tweener.Kill();
             FadeOut();
+        }
+    }
+
+    private void ColorRenderer(Result result) {
+        tweener.ChangeStartValue(new Color2(renderer.startColor, renderer.endColor));
+
+        if (result.GestureClass == "No match" || result.Score < 0.5f) {
+            tweener.ChangeEndValue(new Color2(Color.white, Color.white)).Restart();
+        }
+        else {
+            var gestureInfo = gestureInfos.First(info => info.Type.ToString() == result.GestureClass);
+            var color = Color.Lerp(Color.white, gestureInfo.Color, result.Score);
+            tweener.ChangeEndValue(new Color2(color, color)).Restart();
         }
     }
 
