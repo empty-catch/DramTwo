@@ -41,3 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Gesture
+    uniqueID: 261447457
+    locked: 0
