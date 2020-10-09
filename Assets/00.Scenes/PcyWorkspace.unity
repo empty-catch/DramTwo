@@ -414,7 +414,7 @@ MonoBehaviour:
   particle: {fileID: 2060312177}
   fadeDuration: 0.5
   dotsDistance: 0.01
-  drawerFadeDuration: 0.2
+  drawerFadeDuration: 0.1
   gestureInfos:
   - {fileID: 11400000, guid: 1d4d9193184c9634d8c8bc0c3199c6f0, type: 2}
   - {fileID: 11400000, guid: 8e073e18a235ed149b86e7826c600638, type: 2}
