@@ -41,6 +41,7 @@ public abstract class BaseMonster : MonoBehaviour {
 
     public void ActiveMonster() {
         gameObject.SetActive(true);
+        // TODO : Random 제스쳐들 설정하기
     }
 
     private void OnEnable() {
@@ -52,7 +53,7 @@ public abstract class BaseMonster : MonoBehaviour {
         var direction = (PlayerCharacterController.instance.gameObject.transform.position -
                         gameObject.transform.position).normalized;
 
-        gameObject.transform.Translate(direction * speed * Time.deltaTime);
+        gameObject.transform.Translate(direction * (speed * Time.deltaTime));
     }
 
     public virtual void Attack() { }
@@ -64,6 +65,8 @@ public abstract class BaseMonster : MonoBehaviour {
             Death();
         }
     }
+    
+    // TODO : 문양 갱신 만들기
     
     public void Death() {
         gameObject.SetActive(true);
