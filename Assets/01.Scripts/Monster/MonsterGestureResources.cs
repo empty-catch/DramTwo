@@ -4,7 +4,6 @@ using UnityEngine;
 
 [Serializable]
 public class MonsterGestureResource {
-    // TODO : string enum으로 변경
     [SerializeField]
     private GestureType name;
     public GestureType Name => name;
@@ -38,7 +37,6 @@ public class MonsterGestureResources : ScriptableObject {
     [SerializeField]
     private MonsterGestureResource[] monsterGestureResources;
     
-    // TODO : string enum으로 변경
     private Dictionary<GestureType, Sprite> gestureItems = new Dictionary<GestureType, Sprite>();
     public Dictionary<GestureType, Sprite> GestureItems => gestureItems;
     
