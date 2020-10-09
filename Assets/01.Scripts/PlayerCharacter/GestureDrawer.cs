@@ -13,6 +13,9 @@ public class GestureDrawer : MonoBehaviour {
     private Image handle;
 
     [SerializeField]
+    private ParticleSystem particle;
+
+    [SerializeField]
     private float fadeDuration;
 
     [SerializeField]
@@ -27,6 +30,9 @@ public class GestureDrawer : MonoBehaviour {
     private readonly List<Point> points = new List<Point>();
     private new Camera camera;
     private Tweener tweener;
+
+    private Vector3 position;
+    private Vector3 worldPosition;
     private int positionCount;
 
     private IEnumerable<Gesture> Gestures => gestureInfos.Select(info => info.Gesture);
@@ -38,28 +44,20 @@ public class GestureDrawer : MonoBehaviour {
     private void Update() {
         if (Input.GetMouseButtonDown(0)) {
             ResetDrawer();
+            UpdatePositions();
+            UpdateDrawer();
+            ResetRenderer();
+
             var color = new Color2(Color.white, Color.white);
-            tweener = renderer.DOColor(color, color, drawerFadeDuration).SetAutoKill(false);
+            tweener = renderer.DOColor(default, color, drawerFadeDuration).SetAutoKill(false);
         }
         else if (Input.GetMouseButton(0)) {
-            var position = Input.mousePosition;
-            var worldPoint = camera.ScreenToWorldPoint(new Vector3(position.x, position.y, 10));
-            handle.rectTransform.position = worldPoint;
-
-            if (renderer.positionCount > 0 &&
-                (worldPoint - renderer.GetPosition(positionCount - 1)).sqrMagnitude < dotsDistance) {
+            UpdatePositions();
+            if ((worldPosition - renderer.GetPosition(positionCount - 1)).sqrMagnitude < dotsDistance) {
                 return;
             }
 
-            points.Add(new Point(position.x, -position.y, 0));
-            positionCount++;
-            renderer.positionCount = positionCount;
-            renderer.SetPosition(positionCount - 1, worldPoint);
-
-            if (positionCount < 2) {
-                return;
-            }
-
+            UpdateDrawer();
             var candidate = new Gesture(points.ToArray());
             var result = PointCloudRecognizer.Classify(candidate, Gestures);
             ColorRenderer(result);
@@ -68,6 +66,19 @@ public class GestureDrawer : MonoBehaviour {
             tweener.Kill();
             FadeOut();
         }
+    }
+
+    private void UpdatePositions() {
+        position = Input.mousePosition;
+        worldPosition = camera.ScreenToWorldPoint(new Vector3(position.x, position.y, 10));
+        handle.rectTransform.position = worldPosition;
+    }
+
+    private void UpdateDrawer() {
+        points.Add(new Point(position.x, -position.y, 0));
+        positionCount++;
+        renderer.positionCount = positionCount;
+        renderer.SetPosition(positionCount - 1, worldPosition);
     }
 
     private void ColorRenderer(Result result) {
@@ -87,7 +98,9 @@ public class GestureDrawer : MonoBehaviour {
         points.Clear();
         positionCount = 0;
         renderer.positionCount = 0;
+    }
 
+    private void ResetRenderer() {
         renderer.DOKill();
         renderer.enabled = true;
         renderer.SetColor(Color.white);
@@ -95,10 +108,12 @@ public class GestureDrawer : MonoBehaviour {
         handle.DOKill();
         handle.enabled = true;
         handle.color = Color.white;
+        particle.Play();
     }
 
     private void FadeOut() {
         renderer.DOFade(0f, fadeDuration).OnComplete(() => renderer.enabled = false);
         handle.DOFade(0f, fadeDuration).OnComplete(() => handle.enabled = false);
+        particle.Stop();
     }
 }
