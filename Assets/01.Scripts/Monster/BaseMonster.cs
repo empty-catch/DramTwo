@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public abstract class BaseMonster : MonoBehaviour {
     private MonsterHpItem[] hpItems;
@@ -41,7 +42,7 @@ public abstract class BaseMonster : MonoBehaviour {
 
     public void ActiveMonster() {
         gameObject.SetActive(true);
-        // TODO : Random 제스쳐들 설정하기
+        AllocateNewGesture();
     }
 
     private void OnEnable() {
@@ -66,7 +67,25 @@ public abstract class BaseMonster : MonoBehaviour {
         }
     }
     
-    // TODO : 문양 갱신 만들기
+    private void AllocateNewGesture() {
+        List<GestureType> gestureTypes = new List<GestureType>();
+        foreach (GestureType value in Enum.GetValues(typeof(GestureType))) {
+            gestureTypes.Add(value);    
+        }
+        
+        if (gestureTypes.Count <= hp) {
+            throw new Exception("Hp is bigger than enum gesture length.");
+        }
+
+        GestureType randomGesture;
+        
+        for (int i = 0; i < hp; i++) {
+            randomGesture = (GestureType)Random.Range(0, gestureTypes.Count);
+            gestureTypes.Remove(randomGesture);
+            
+            hpItems[i].SettingGesture(randomGesture);
+        }
+    }
     
     public void Death() {
         gameObject.SetActive(true);
