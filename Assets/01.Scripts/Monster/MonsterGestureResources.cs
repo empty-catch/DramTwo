@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
+using UnityEditor;
 using UnityEngine;
 
 [Serializable]
@@ -15,21 +17,29 @@ public class MonsterGestureResource {
 
 [CreateAssetMenu(fileName = "MonsterGestureSprite", menuName = "Resources/MonsterGestureSprite",order = 0)]
 public class MonsterGestureResources : ScriptableObject {
-    private static string path = "/Unit/Resource/MonsterGestureSprite";
-    private static MonsterGestureResources _instance;
+    private static MonsterGestureResources instance;
 
-    public static MonsterGestureResources instance {
+    public static MonsterGestureResources Instance {
         get {
-            if (_instance == null) {
-                var temp = Resources.Load<MonsterGestureResources>(path);
-                if (temp == null) {
-                    throw new Exception("Not Found Monster Gesture Sprite Resources.");
+            if (instance is null) {
+                var prefab = Resources.Load<MonsterGestureResources>("Unit/Resource/");
+                if (prefab is null ) {
+                    string path = "Assets/Unit/Resource/MonsterGestureSprite";
+
+                    var folderInfo = new DirectoryInfo(path);
+                    
+                    if (folderInfo.Exists == false) {
+                        folderInfo.Create();
+                    }
+
+                    prefab = ScriptableObject.CreateInstance<MonsterGestureResources>();
+                    AssetDatabase.CreateAsset(prefab, $"{path}/MonsterGestureResources.asset");
                 }
 
-                _instance = temp;
+                instance = prefab;
             }
             
-            return _instance;
+            return instance;
         }
     }
 
@@ -40,7 +50,7 @@ public class MonsterGestureResources : ScriptableObject {
     private Dictionary<GestureType, Sprite> gestureItems = new Dictionary<GestureType, Sprite>();
     public Dictionary<GestureType, Sprite> GestureItems => gestureItems;
     
-    private void Awake() {
+    private void OnEnable() {
         foreach (var resourceItem in monsterGestureResources) {
             if (gestureItems.ContainsKey(resourceItem.Name) == false) {
                 gestureItems.Add(resourceItem.Name ,resourceItem.GestureSprite);

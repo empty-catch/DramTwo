@@ -9,7 +9,7 @@ public class MonsterHpItem : MonoBehaviour {
     }
 
     public void SettingGesture(GestureType key) {
-        image.sprite = MonsterGestureResources.instance.GestureItems[key];
+        image.sprite = MonsterGestureResources.Instance.GestureItems[key];
     }
 
     public void ResetObject() {
