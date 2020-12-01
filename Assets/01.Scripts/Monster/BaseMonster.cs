@@ -28,8 +28,20 @@ public abstract class BaseMonster : MonoBehaviour {
     [SerializeField]
     private UnityEvent generateEvent;
 
+    private Action generateAction;
+    public Action GenerateAction {
+        get => generateAction;
+        set => generateAction = value;
+    }
+    
     [SerializeField]
     private UnityEvent destroyEvent;
+    
+    private Action destroyAction;
+    public Action DestroyAction {
+        get => destroyAction;
+        set => destroyAction = value;
+    }
     
     private void Awake() {
         hpItems = gameObject.GetComponentsInChildren<MonsterHpItem>(true);
@@ -48,6 +60,7 @@ public abstract class BaseMonster : MonoBehaviour {
     private void OnEnable() {
         ResetObject();
         generateEvent?.Invoke();
+        generateAction?.Invoke();
     }
 
     public virtual void Move() {
@@ -90,6 +103,10 @@ public abstract class BaseMonster : MonoBehaviour {
     public void Death() {
         gameObject.SetActive(true);
         destroyEvent?.Invoke();
+        destroyAction?.Invoke();
+
+        generateAction = null;
+        destroyAction = null;
     }
     
     public virtual void ResetObject() {
