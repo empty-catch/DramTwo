@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MonsterFactory : MonoBehaviour {
-    // TODO : 이부분 모노 아니게 하는게 더 나을거 같음
     [SerializeField]
     private BaseMonster targetMonsterPrefab;
 
