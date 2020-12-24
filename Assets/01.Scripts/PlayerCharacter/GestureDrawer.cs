@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using DG.Tweening;
 using PDollarGestureRecognizer;
+using UnityEngine.Serialization;
 
 public class GestureDrawer : MonoBehaviour {
     [SerializeField]
@@ -34,7 +35,10 @@ public class GestureDrawer : MonoBehaviour {
     private GestureInfo[] gestureInfos;
 
     [SerializeField]
-    private UnityEvent<GestureType> onDrawn;
+    private UnityEvent<GestureType> shapeDrawn;
+
+    [SerializeField]
+    private UnityEvent<GestureType> skillDrawn;
 
     private readonly List<Point> points = new List<Point>();
     private new Camera camera;
@@ -74,7 +78,7 @@ public class GestureDrawer : MonoBehaviour {
         }
         else if (Input.GetMouseButtonUp(0)) {
             if (gestureType != GestureType.None) {
-                onDrawn?.Invoke(gestureType);
+                shapeDrawn?.Invoke(gestureType);
             }
 
             tweener.Kill();

@@ -64,7 +64,7 @@ public abstract class BaseMonster : MonoBehaviour {
     }
 
     public virtual void Move() {
-        var direction = (PlayerCharacterController.instance.gameObject.transform.position -
+        var direction = (PlayerCharacterController.Instance.gameObject.transform.position -
                         gameObject.transform.position).normalized;
 
         gameObject.transform.Translate(direction * (speed * Time.deltaTime));

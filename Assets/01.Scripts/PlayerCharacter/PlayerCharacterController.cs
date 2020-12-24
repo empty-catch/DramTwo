@@ -1,21 +1,20 @@
 using UnityEngine;
 
 public class PlayerCharacterController : MonoBehaviour {
-    // ReSharper disable once InconsistentNaming
-    private static PlayerCharacterController _instance;
+    private static PlayerCharacterController instance;
 
-    // ReSharper disable once InconsistentNaming
-    public static PlayerCharacterController instance {
+    public static PlayerCharacterController Instance {
         get {
-            if (_instance != null) return _instance;
-            _instance = FindObjectOfType<PlayerCharacterController>();
+            instance ??= FindObjectOfType<PlayerCharacterController>();
+            if (instance != null) {
+                return instance;
+            }
 
-            if (_instance != null) return _instance;
             var prefabs = Resources.Load<GameObject>("/Unit/PlayerCharacter");
             var playerCharacterObject = Instantiate(prefabs, Vector2.zero, Quaternion.identity);
-            _instance = playerCharacterObject.GetComponentSafe<PlayerCharacterController>();
+            instance = playerCharacterObject.GetComponentSafe<PlayerCharacterController>();
 
-            return _instance;
+            return instance;
         }
     }
 }
