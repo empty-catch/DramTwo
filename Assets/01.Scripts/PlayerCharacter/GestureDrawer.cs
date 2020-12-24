@@ -28,6 +28,9 @@ public class GestureDrawer : MonoBehaviour {
     private float drawerFadeDuration;
 
     [SerializeField]
+    private float minScore;
+
+    [SerializeField]
     private GestureInfo[] gestureInfos;
 
     [SerializeField]
@@ -94,7 +97,7 @@ public class GestureDrawer : MonoBehaviour {
 
     private void ColorRenderer(Result result) {
         tweener.ChangeStartValue(new Color2(renderer.startColor, renderer.endColor));
-        if (result.GestureClass == "No match" || result.Score < 0.5f) {
+        if (result.GestureClass == "No match" || result.Score < minScore) {
             tweener.ChangeEndValue(new Color2(Color.white, Color.white)).Restart();
             gestureType = GestureType.None;
         }

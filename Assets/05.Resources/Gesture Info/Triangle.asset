@@ -7,11 +7,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d013bdf8dfd41359edb5c64c04ac7e9, type: 3}
-  m_Name: Zigzag
+  m_Name: Triangle
   m_EditorClassIdentifier: 
-  xml: {fileID: 4900000, guid: af545c4d908be5b4a91b2f7f30719ad7, type: 3}
-  type: 5
-  color: {r: 1, g: 0.84313726, b: 0, a: 1}
+  xml: {fileID: 4900000, guid: 5ec3edf0744b7e44988f70b1bac5d5db, type: 3}
+  type: 7
+  color: {r: 0, g: 0.75, b: 1, a: 1}

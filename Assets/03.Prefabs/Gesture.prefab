@@ -183,12 +183,15 @@ MonoBehaviour:
   dotsDistance: 0.01
   drawerFadeDuration: 0.1
   gestureInfos:
-  - {fileID: 11400000, guid: 1d4d9193184c9634d8c8bc0c3199c6f0, type: 2}
-  - {fileID: 11400000, guid: 8e073e18a235ed149b86e7826c600638, type: 2}
-  - {fileID: 11400000, guid: c82a4fe185d316343b8ce5b575767a4f, type: 2}
+  - {fileID: 11400000, guid: 4e8204817eec98a479f739948e40b2e9, type: 2}
   - {fileID: 11400000, guid: bcc05b175d885c44f8150fc1970b9429, type: 2}
-  - {fileID: 11400000, guid: 845fc5ab0c623644cb1b41cc22470903, type: 2}
-  - {fileID: 11400000, guid: 411e05bee2c801b47a334ee0d625540e, type: 2}
+  - {fileID: 11400000, guid: 1d4d9193184c9634d8c8bc0c3199c6f0, type: 2}
+  - {fileID: 11400000, guid: 89d6142797becee4fab3bbb4dec49f7b, type: 2}
+  - {fileID: 11400000, guid: 143fe3e886047cf4b96fa5c16c4d3b87, type: 2}
+  - {fileID: 11400000, guid: d18793bd4b0033b42b3dbb9115a36606, type: 2}
+  - {fileID: 11400000, guid: df9e058ca62b81747a80740e11a68c5d, type: 2}
+  - {fileID: 11400000, guid: c82a4fe185d316343b8ce5b575767a4f, type: 2}
+  - {fileID: 11400000, guid: 8e073e18a235ed149b86e7826c600638, type: 2}
   onDrawn:
     m_PersistentCalls:
       m_Calls: []

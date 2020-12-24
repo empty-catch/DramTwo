@@ -4,6 +4,9 @@
     Vertical,
     UpArrow,
     DownArrow,
-    Zigzag,
-    Heart
+    LeftArrow, 
+    RightArrow, 
+    Triangle, 
+    InvertedTriangle,
+    Circle
 }

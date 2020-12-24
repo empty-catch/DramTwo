@@ -7,11 +7,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d013bdf8dfd41359edb5c64c04ac7e9, type: 3}
-  m_Name: Vertical
+  m_Name: RightArrow
   m_EditorClassIdentifier: 
-  xml: {fileID: 4900000, guid: 289b6ba357e58f046bc19e2756cbae11, type: 3}
-  type: 2
-  color: {r: 0, g: 0.25, b: 1, a: 1}
+  xml: {fileID: 4900000, guid: 9a0c46414852b6f47b556ac448197db2, type: 3}
+  type: 6
+  color: {r: 1, g: 0.5, b: 0, a: 1}

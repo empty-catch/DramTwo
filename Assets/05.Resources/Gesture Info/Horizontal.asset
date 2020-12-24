@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d013bdf8dfd41359edb5c64c04ac7e9, type: 3}
   m_Name: Horizontal
   m_EditorClassIdentifier: 
-  xml: {fileID: 4900000, guid: 882dd7ac8cc73ef41a66bc300bb2485b, type: 3}
+  xml: {fileID: 4900000, guid: 8e92d6331852bc746b94c2c365fb5173, type: 3}
   type: 1
   color: {r: 1, g: 0, b: 0, a: 1}

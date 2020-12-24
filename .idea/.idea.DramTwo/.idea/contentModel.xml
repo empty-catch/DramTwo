@@ -30,12 +30,15 @@
         </e>
         <e p="05.Resources" t="Include">
           <e p="XML" t="Include">
-            <e p="DownArrow-132328872233727975.xml" t="Include" />
-            <e p="Heart-132467176014890854.xml" t="Include" />
-            <e p="Horizontal-132328040452972834.xml" t="Include" />
-            <e p="UpArrow-132328872454736308.xml" t="Include" />
-            <e p="Vertical-132328871384559777.xml" t="Include" />
-            <e p="Zigzag-132328872645410796.xml" t="Include" />
+            <e p="Circle-132532645090254608.xml" t="Include" />
+            <e p="DownArrow-132532645237592937.xml" t="Include" />
+            <e p="Horizontal-132532645482225015.xml" t="Include" />
+            <e p="InvertedTriangle-132532645644298584.xml" t="Include" />
+            <e p="LeftArrow-132532645805109785.xml" t="Include" />
+            <e p="RightArrow-132532645953050760.xml" t="Include" />
+            <e p="Triangle-132532646072075626.xml" t="Include" />
+            <e p="UpArrow-132532646156934500.xml" t="Include" />
+            <e p="Vertical-132532646235367091.xml" t="Include" />
           </e>
         </e>
         <e p="NaughtyAttributes" t="Include">
