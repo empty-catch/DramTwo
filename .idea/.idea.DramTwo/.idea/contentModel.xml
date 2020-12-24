@@ -25,8 +25,12 @@
             <e p="PlayerCharacterController.cs" t="Include" />
           </e>
           <e p="Skill" t="Include">
+            <e p="ClockSkill.cs" t="Include" />
+            <e p="HeartSkill.cs" t="Include" />
             <e p="ISkill.cs" t="Include" />
-            <e p="SkillFactory.cs" t="Include" />
+            <e p="LightningSkill.cs" t="Include" />
+            <e p="SkillHandler.cs" t="Include" />
+            <e p="StarSkill.cs" t="Include" />
           </e>
           <e p="System" t="Include">
             <e p="Extensions.cs" t="Include" />
