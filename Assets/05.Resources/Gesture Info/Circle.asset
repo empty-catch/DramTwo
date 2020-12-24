@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xml: {fileID: 4900000, guid: 415211dfead4f0e4fb8cd2e9512765e3, type: 3}
   type: 9
-  color: {r: 0.6, g: 0, b: 1, a: 1}
+  color: {r: 1, g: 1, b: 1, a: 1}

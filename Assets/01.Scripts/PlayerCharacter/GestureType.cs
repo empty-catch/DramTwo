@@ -8,5 +8,9 @@
     RightArrow, 
     Triangle, 
     InvertedTriangle,
-    Circle
+    Circle, 
+    Lightning, 
+    Heart,
+    Clock, 
+    Star
 }

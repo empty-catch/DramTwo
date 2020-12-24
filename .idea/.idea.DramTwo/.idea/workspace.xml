@@ -17,9 +17,11 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureType.cs" />
       <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.16/UnityEngine.TestRunner/TestRunner/Callbacks/PlayerQuitHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/ISkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureType.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureDrawer.cs" />
     </changedPaths>
   </component>

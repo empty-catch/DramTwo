@@ -24,6 +24,10 @@
             <e p="GestureType.cs" t="Include" />
             <e p="PlayerCharacterController.cs" t="Include" />
           </e>
+          <e p="Skill" t="Include">
+            <e p="ISkill.cs" t="Include" />
+            <e p="SkillFactory.cs" t="Include" />
+          </e>
           <e p="System" t="Include">
             <e p="Extensions.cs" t="Include" />
           </e>
@@ -31,11 +35,15 @@
         <e p="05.Resources" t="Include">
           <e p="XML" t="Include">
             <e p="Circle-132532645090254608.xml" t="Include" />
+            <e p="Clock-132532697409044794.xml" t="Include" />
             <e p="DownArrow-132532645237592937.xml" t="Include" />
+            <e p="Heart-132532698411091193.xml" t="Include" />
             <e p="Horizontal-132532645482225015.xml" t="Include" />
             <e p="InvertedTriangle-132532645644298584.xml" t="Include" />
             <e p="LeftArrow-132532645805109785.xml" t="Include" />
+            <e p="Lightning-132532697203021674.xml" t="Include" />
             <e p="RightArrow-132532645953050760.xml" t="Include" />
+            <e p="Star-132532697870853855.xml" t="Include" />
             <e p="Triangle-132532651266100556.xml" t="Include" />
             <e p="UpArrow-132532651451493182.xml" t="Include" />
             <e p="Vertical-132532646235367091.xml" t="Include" />

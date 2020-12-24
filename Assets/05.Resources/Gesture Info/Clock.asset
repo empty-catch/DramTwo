@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d013bdf8dfd41359edb5c64c04ac7e9, type: 3}
-  m_Name: LeftArrow
+  m_Name: Clock
   m_EditorClassIdentifier: 
-  xml: {fileID: 4900000, guid: b1b66d5f3df26a84b8b1f5a041c99148, type: 3}
-  type: 5
-  color: {r: 1, g: 1, b: 1, a: 1}
+  xml: {fileID: 4900000, guid: 6f6f1f50cb9232041ab6f475c171d155, type: 3}
+  type: 12
+  color: {r: 0, g: 0.75, b: 1, a: 1}
