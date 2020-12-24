@@ -182,6 +182,7 @@ MonoBehaviour:
   fadeDuration: 0.5
   dotsDistance: 0.01
   drawerFadeDuration: 0.1
+  minScore: 0.75
   gestureInfos:
   - {fileID: 11400000, guid: 4e8204817eec98a479f739948e40b2e9, type: 2}
   - {fileID: 11400000, guid: bcc05b175d885c44f8150fc1970b9429, type: 2}
@@ -192,7 +193,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: df9e058ca62b81747a80740e11a68c5d, type: 2}
   - {fileID: 11400000, guid: c82a4fe185d316343b8ce5b575767a4f, type: 2}
   - {fileID: 11400000, guid: 8e073e18a235ed149b86e7826c600638, type: 2}
-  onDrawn:
+  shapeDrawn:
+    m_PersistentCalls:
+      m_Calls: []
+  skillDrawn:
     m_PersistentCalls:
       m_Calls: []
 --- !u!120 &8073920241763627200
