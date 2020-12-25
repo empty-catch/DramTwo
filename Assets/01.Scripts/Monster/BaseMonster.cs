@@ -82,8 +82,10 @@ public abstract class BaseMonster : MonoBehaviour {
     
     private void AllocateNewGesture() {
         List<GestureType> gestureTypes = new List<GestureType>();
-        foreach (GestureType value in Enum.GetValues(typeof(GestureType))) {
-            gestureTypes.Add(value);    
+        var monsterGestureItems = MonsterGestureResources.Instance.GestureItems;
+        
+        foreach (var item in monsterGestureItems) {
+            gestureTypes.Add(item.Key);
         }
         
         if (gestureTypes.Count <= hp) {
