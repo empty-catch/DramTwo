@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class MonsterHpItem : MonoBehaviour {
     private Image image;
-    // TODO : 제스쳐 enum 받아와서 설정해주기 
+
     private void Awake() {
         image = gameObject.GetComponent<Image>();
     }
