@@ -23,11 +23,34 @@ public class PlayerCharacterController : MonoBehaviour {
 
     #endregion
 
+    private const int maxPoint = 3;
+
+    [SerializeField]
+    private UnityEvent playerDead;
+
     [SerializeField]
     private UnityEvent<GestureType> gestureDrawn;
 
     [SerializeField]
     private UnityEvent<GestureType> skillDrawn;
+
+    private int hp = maxPoint;
+    private int sp = maxPoint;
+
+    public int Hp {
+        get => hp;
+        set {
+            hp = Mathf.Clamp(value, 0, maxPoint);
+            if (hp == 0) {
+                playerDead?.Invoke();
+            }
+        }
+    }
+
+    public int Sp {
+        get => sp;
+        set => sp = Mathf.Clamp(value, 0, maxPoint);
+    }
 
     public void ProcessGesture(GestureType gestureType) {
         if (gestureType >= GestureType.Lightning) {

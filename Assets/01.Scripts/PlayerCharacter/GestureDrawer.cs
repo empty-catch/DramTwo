@@ -78,7 +78,6 @@ public class GestureDrawer : MonoBehaviour {
                 drawn?.Invoke(gestureType);
             }
 
-            Debug.Log(gestureType);
             tweener.Kill();
             FadeOut();
         }

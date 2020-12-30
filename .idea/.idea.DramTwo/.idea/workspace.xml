@@ -11,7 +11,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.16/UnityEngine.TestRunner/TestRunner/Callbacks/PlayerQuitHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01.Scripts/System/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -19,15 +18,15 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.16/UnityEngine.TestRunner/TestRunner/Callbacks/PlayerQuitHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureType.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillFactory.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/ISkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/LightningSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/HeartSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/Clock.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/StarSkill.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/Skill.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
     </changedPaths>
   </component>
@@ -40,7 +39,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
