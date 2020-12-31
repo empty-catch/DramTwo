@@ -5,15 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2943b2b7-dc5c-4db4-aefd-621120e43961" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/NotEnoughSpException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/NotEnoughSpException.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03.Prefabs/Player Character.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/03.Prefabs/Player Character/Player Character.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/00.Scenes/InGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Scenes/InGameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/00.Scenes/PcyWorkspace.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Scenes/PcyWorkspace.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/Skill/ClockSkill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/ClockSkill.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Prefabs/Gesture.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Prefabs/Gesture.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/Skill/LightningSkill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/LightningSkill.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Prefabs/Gesture.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Prefabs/Player Character/Gesture.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Prefabs/Gesture.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Prefabs/Player Character/Gesture.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/03.Prefabs/PlayerCharacter.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Prefabs/PlayerCharacter.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Prefabs/PlayerCharacter.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Prefabs/Player Character/Player Character.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,9 +46,9 @@
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/HeartSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/StarSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/NotEnoughSpException.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/LightningSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/ISkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/ClockSkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/LightningSkill.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1iYHuZf5WJjRE53pTfqgSgm9kbH" />

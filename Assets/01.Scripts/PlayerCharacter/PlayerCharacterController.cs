@@ -23,7 +23,7 @@ public class PlayerCharacterController : MonoBehaviour {
 
     #endregion
 
-    private const int maxPoint = 3;
+    private const int MaxPoint = 6;
 
     [SerializeField]
     private UnityEvent playerDead;
@@ -34,13 +34,13 @@ public class PlayerCharacterController : MonoBehaviour {
     [SerializeField]
     private UnityEvent<GestureType> skillDrawn;
 
-    private int hp = maxPoint;
-    private int sp = maxPoint;
+    private int hp = MaxPoint;
+    private int sp = MaxPoint;
 
     public int Hp {
         get => hp;
         set {
-            hp = Mathf.Clamp(value, 0, maxPoint);
+            hp = Mathf.Clamp(value, 0, MaxPoint);
             if (hp == 0) {
                 playerDead?.Invoke();
             }
@@ -49,7 +49,7 @@ public class PlayerCharacterController : MonoBehaviour {
 
     public int Sp {
         get => sp;
-        set => sp = Mathf.Clamp(value, 0, maxPoint);
+        set => sp = Mathf.Clamp(value, 0, MaxPoint);
     }
 
     public void ProcessGesture(GestureType gestureType) {
