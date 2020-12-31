@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public class HeartSkill : ISkill {
+﻿public class HeartSkill : ISkill {
     private const int SpCost = 3;
     
     public GestureType GestureType => GestureType.Heart;

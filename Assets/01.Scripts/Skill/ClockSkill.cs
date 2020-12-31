@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public class ClockSkill : ISkill {
+﻿public class ClockSkill : ISkill {
     private const int SpCost = 2;
     
     public GestureType GestureType => GestureType.Clock;

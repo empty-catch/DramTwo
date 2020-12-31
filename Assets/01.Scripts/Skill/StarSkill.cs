@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public class StarSkill : ISkill {
+﻿public class StarSkill : ISkill {
     private const int SpCost = 3;
 
     public GestureType GestureType => GestureType.Star;

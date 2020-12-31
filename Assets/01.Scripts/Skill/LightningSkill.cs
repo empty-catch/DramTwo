@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public class LightningSkill : ISkill {
+﻿public class LightningSkill : ISkill {
     private const int SpCost = 2;
     
     public GestureType GestureType => GestureType.Lightning;
