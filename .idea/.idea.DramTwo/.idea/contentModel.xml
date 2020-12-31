@@ -30,6 +30,7 @@
             <e p="ISkill.cs" t="Include" />
             <e p="LightningSkill.cs" t="Include" />
             <e p="NotEnoughSpException.cs" t="Include" />
+            <e p="SkillCannotBeUsedException.cs" t="Include" />
             <e p="SkillHandler.cs" t="Include" />
             <e p="StarSkill.cs" t="Include" />
           </e>

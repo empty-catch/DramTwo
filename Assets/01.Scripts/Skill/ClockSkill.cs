@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 public class ClockSkill : ISkill {
-    private const int SpCost = 3;
+    private const int SpCost = 2;
     
     public GestureType GestureType => GestureType.Clock;
     
@@ -10,6 +10,6 @@ public class ClockSkill : ISkill {
             throw new NotEnoughSpException("The player character's SP is not enough");
         }
         
-        
+        // TODO: 플레이어 제외 시간 50% 느려짐. (BGM도 느려짐)
     }
 }

@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2943b2b7-dc5c-4db4-aefd-621120e43961" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/NotEnoughSpException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/NotEnoughSpException.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/03.Prefabs/Player Character.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/03.Prefabs/Player Character/Player Character.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00.Scenes/InGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Scenes/InGameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00.Scenes/PcyWorkspace.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Scenes/PcyWorkspace.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/Skill/ClockSkill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/ClockSkill.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/Skill/LightningSkill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/LightningSkill.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Prefabs/Gesture.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Prefabs/Player Character/Gesture.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Prefabs/Gesture.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Prefabs/Player Character/Gesture.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Prefabs/PlayerCharacter.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Prefabs/PlayerCharacter.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Prefabs/Player Character/Player Character.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +22,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/01.Scripts/System/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01.Scripts/Skill/ISkill.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/9c/2aa5818d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -40,14 +32,15 @@
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillFactory.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/Clock.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/Skill.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureDrawer.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/HeartSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/StarSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/NotEnoughSpException.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/ISkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/ClockSkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillCannotBeUsedException.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/HeartSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/LightningSkill.cs" />
     </changedPaths>
   </component>

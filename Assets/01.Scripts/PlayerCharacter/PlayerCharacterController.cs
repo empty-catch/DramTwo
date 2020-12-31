@@ -37,6 +37,8 @@ public class PlayerCharacterController : MonoBehaviour {
     private int hp = MaxPoint;
     private int sp = MaxPoint;
 
+    public bool IsFullHp => Hp >= MaxPoint;
+
     public int Hp {
         get => hp;
         set {
