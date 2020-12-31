@@ -2,6 +2,7 @@
 
 public class HeartSkill : ISkill {
     private const int SpCost = 3;
+    
     public GestureType GestureType => GestureType.Heart;
 
     public void Activate() {
