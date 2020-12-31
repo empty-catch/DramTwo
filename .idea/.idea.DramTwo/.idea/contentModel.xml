@@ -29,6 +29,7 @@
             <e p="HeartSkill.cs" t="Include" />
             <e p="ISkill.cs" t="Include" />
             <e p="LightningSkill.cs" t="Include" />
+            <e p="NotEnoughSpException.cs" t="Include" />
             <e p="SkillHandler.cs" t="Include" />
             <e p="StarSkill.cs" t="Include" />
           </e>
