@@ -10,7 +10,7 @@ public class HeartSkill : ISkill {
         }
 
         if (PlayerCharacterController.Instance.IsFullHp) {
-            throw new SkillCannotBeUsedException("Heart skill cannot be used when player character is full hp");
+            throw new SkillCannotBeUsedException("The player character's HP is full");
         }
 
         PlayerCharacterController.Instance.Hp++;
