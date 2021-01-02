@@ -59,6 +59,9 @@ public abstract class BaseMonster : MonoBehaviour {
 
     private void OnEnable() {
         ResetObject();
+        
+        MonsterController.Instance.SubscribeActiveMonster(this);
+        
         generateEvent?.Invoke();
         generateAction?.Invoke();
     }
@@ -104,6 +107,9 @@ public abstract class BaseMonster : MonoBehaviour {
     
     public void Death() {
         gameObject.SetActive(true);
+        
+        MonsterController.Instance.UnsubscribeActiveMonster(this);
+        
         destroyEvent?.Invoke();
         destroyAction?.Invoke();
 
