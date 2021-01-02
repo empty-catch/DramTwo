@@ -9,13 +9,13 @@ public class SkillHandler : MonoBehaviour {
     }
 
     private void Awake() {
-        AddSkillToDictionary(new LightningSkill());
-        AddSkillToDictionary(new HeartSkill());
-        AddSkillToDictionary(new ClockSkill());
-        AddSkillToDictionary(new StarSkill());
+        AddNormalSkill(new LightningSkill());
+        AddNormalSkill(new HeartSkill());
+        AddNormalSkill(new ClockSkill());
+        AddNormalSkill(new StarSkill());
     }
 
-    private void AddSkillToDictionary(ISkill skill) {
+    private void AddNormalSkill(ISkill skill) {
         skills.Add(skill.GestureType, skill);
     }
 }
