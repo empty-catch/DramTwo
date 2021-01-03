@@ -21,7 +21,7 @@ public class SkillHandler : MonoBehaviour {
     }
 
     public void ActivateSpecialSkill() {
-        if (canActivateSpecialSkill == false && gestureCount < 100) {
+        if (canActivateSpecialSkill == false || gestureCount < 100) {
             gestureCount++;
             return;
         }
