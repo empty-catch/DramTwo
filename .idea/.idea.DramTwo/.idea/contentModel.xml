@@ -14,11 +14,15 @@
             <e p="MonsterHpItem.cs" t="Include" />
             <e p="NormalMonster.cs" t="Include" />
           </e>
+          <e p="MonsterController" t="Include">
+            <e p="MonsterController.cs" t="Include" />
+          </e>
           <e p="MonsterGenerator" t="Include">
             <e p="MonsterFactory.cs" t="Include" />
             <e p="MonsterGenerator.cs" t="Include" />
           </e>
           <e p="PlayerCharacter" t="Include">
+            <e p="GestureCounter.cs" t="Include" />
             <e p="GestureDrawer.cs" t="Include" />
             <e p="GestureInfo.cs" t="Include" />
             <e p="GestureType.cs" t="Include" />
