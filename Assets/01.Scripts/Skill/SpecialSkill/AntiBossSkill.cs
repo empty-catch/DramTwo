@@ -1,4 +1,4 @@
-﻿public class AntiBossSkill : ISpecialSKill {
+﻿public class AntiBossSkill : ISpecialSkill {
     public int RequireLevel => 3;
 
     public void Activate() {

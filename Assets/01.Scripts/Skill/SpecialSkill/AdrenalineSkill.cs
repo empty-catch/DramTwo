@@ -1,4 +1,4 @@
-﻿public class AdrenalineSkill : ISpecialSKill {
+﻿public class AdrenalineSkill : ISpecialSkill {
     public int RequireLevel => 0;
 
     public void Activate() {

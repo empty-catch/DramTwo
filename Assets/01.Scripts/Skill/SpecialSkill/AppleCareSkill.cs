@@ -1,4 +1,4 @@
-﻿public class AppleCareSkill : ISpecialSKill {
+﻿public class AppleCareSkill : ISpecialSkill {
     public int RequireLevel => 3;
 
     public void Activate() {

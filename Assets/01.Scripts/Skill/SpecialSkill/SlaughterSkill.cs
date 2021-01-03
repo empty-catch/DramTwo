@@ -1,4 +1,4 @@
-﻿public class SlaughterSkill : ISpecialSKill {
+﻿public class SlaughterSkill : ISpecialSkill {
     public int RequireLevel => 1;
 
     public void Activate() {

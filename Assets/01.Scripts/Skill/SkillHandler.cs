@@ -9,6 +9,7 @@ public class SkillHandler : MonoBehaviour {
     private int specialSkillCooldown = 30;
 
     private readonly Dictionary<GestureType, INormalSkill> skills = new Dictionary<GestureType, INormalSkill>();
+    private readonly Dictionary<int, ISpecialSkill> specialSkills = new Dictionary<int, ISpecialSkill>();
 
     private int specialSkillLevel;
     private int gestureCount;
@@ -43,9 +44,18 @@ public class SkillHandler : MonoBehaviour {
         AddNormalSkill(new HeartSkill());
         AddNormalSkill(new ClockSkill());
         AddNormalSkill(new StarSkill());
+
+        AddSpecialSkill(new AdrenalineSkill());
+        AddSpecialSkill(new SlaughterSkill());
+        AddSpecialSkill(new AppleCareSkill());
+        AddSpecialSkill(new AntiBossSkill());
     }
 
     private void AddNormalSkill(INormalSkill skill) {
         skills.Add(skill.GestureType, skill);
+    }
+
+    private void AddSpecialSkill(ISpecialSkill skill) {
+        specialSkills.Add(skill.RequireLevel, skill);
     }
 }
