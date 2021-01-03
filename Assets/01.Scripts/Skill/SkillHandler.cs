@@ -1,21 +1,41 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
+using Tempus.CoroutineTools;
 using UnityEngine;
 
 public class SkillHandler : MonoBehaviour {
-    private readonly Dictionary<GestureType, ISkill> skills = new Dictionary<GestureType, ISkill>();
-    private readonly Stopwatch cooldown = new Stopwatch();
+    [SerializeField]
+    private int specialSkillCooldown = 30;
 
-    private int specialSkillLevel = 0;
+    private readonly Dictionary<GestureType, ISkill> skills = new Dictionary<GestureType, ISkill>();
+
+    private int specialSkillLevel;
+    private int gestureCount;
+    private bool canActivateSpecialSkill;
 
     public void Activate(GestureType gestureType) {
         if (skills.TryGetValue(gestureType, out var skill)) {
             skill.Activate();
         }
-        else {
-            throw new ArgumentException("There is no skill corresponding to the gesture");
+    }
+
+    public void ActivateSpecialSkill() {
+        if (canActivateSpecialSkill == false && gestureCount < 100) {
+            gestureCount++;
+            return;
         }
+
+        gestureCount = 0;
+        StartCoroutine(Cooldown());
+        // TODO: 특수 스킬 사용
+        "특수 스킬 사용됨".Log();
+    }
+
+    private IEnumerator Cooldown() {
+        canActivateSpecialSkill = false;
+        yield return Yield.Seconds(specialSkillCooldown);
+        canActivateSpecialSkill = true;
     }
 
     private void Awake() {

@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 414c457839fc4940845a7836ee2d5af0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  specialSkillCooldown: 30000
 --- !u!1 &2129512968
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,6 +384,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6327282866067677491, guid: 88f38040cef401041859737baf573dcb, type: 3}
       propertyPath: skillDrawn.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1635232150}
+    - target: {fileID: 6327282866067677491, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: gestureDrawn.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1635232150}
     m_RemovedComponents: []

@@ -22,7 +22,6 @@
             <e p="MonsterGenerator.cs" t="Include" />
           </e>
           <e p="PlayerCharacter" t="Include">
-            <e p="GestureCounter.cs" t="Include" />
             <e p="GestureDrawer.cs" t="Include" />
             <e p="GestureInfo.cs" t="Include" />
             <e p="GestureType.cs" t="Include" />
