@@ -8,8 +8,8 @@ public class SkillHandler : MonoBehaviour {
     [SerializeField]
     private int specialSkillCooldown = 30;
 
-    private readonly Dictionary<GestureType, INormalSkill> skills = new Dictionary<GestureType, INormalSkill>();
-    private readonly Dictionary<int, ISpecialSkill> specialSkills = new Dictionary<int, ISpecialSkill>();
+    private readonly Dictionary<GestureType, ISkill> skills = new Dictionary<GestureType, ISkill>();
+    private readonly Dictionary<int, ISkill> specialSkills = new Dictionary<int, ISkill>();
 
     private int specialSkillLevel;
     private int gestureCount;
@@ -29,8 +29,12 @@ public class SkillHandler : MonoBehaviour {
 
         gestureCount = 0;
         StartCoroutine(Cooldown());
-        // TODO: 특수 스킬 사용
-        "특수 스킬 사용됨".Log();
+
+        for (var i = 0; i < specialSkillLevel; i++) {
+            if (specialSkills.TryGetValue(i, out var skill)) {
+                skill.Activate();
+            }
+        }
     }
 
     private IEnumerator Cooldown() {
