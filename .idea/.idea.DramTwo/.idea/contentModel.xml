@@ -28,15 +28,22 @@
             <e p="PlayerCharacterController.cs" t="Include" />
           </e>
           <e p="Skill" t="Include">
-            <e p="ClockSkill.cs" t="Include" />
-            <e p="HeartSkill.cs" t="Include" />
-            <e p="INormalSkill.cs" t="Include" />
-            <e p="ISkill.cs" t="Include" />
-            <e p="ISpecialSKill.cs" t="Include" />
-            <e p="LightningSkill.cs" t="Include" />
+            <e p="Interfaces" t="Include">
+              <e p="INormalSkill.cs" t="Include" />
+              <e p="ISkill.cs" t="Include" />
+              <e p="ISpecialSKill.cs" t="Include" />
+            </e>
+            <e p="NormalSKill" t="Include">
+              <e p="ClockSkill.cs" t="Include" />
+              <e p="HeartSkill.cs" t="Include" />
+              <e p="LightningSkill.cs" t="Include" />
+            </e>
             <e p="NotEnoughSpException.cs" t="Include" />
             <e p="SkillCannotBeUsedException.cs" t="Include" />
             <e p="SkillHandler.cs" t="Include" />
+            <e p="SpecialSkill" t="Include">
+              <e p="AdrenalineSkill.cs" t="Include" />
+            </e>
             <e p="StarSkill.cs" t="Include" />
           </e>
           <e p="System" t="Include">
