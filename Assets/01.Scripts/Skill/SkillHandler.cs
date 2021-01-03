@@ -12,7 +12,7 @@ public class SkillHandler : MonoBehaviour {
 
     private int specialSkillLevel;
     private int gestureCount;
-    private bool canActivateSpecialSkill;
+    private bool canActivateSpecialSkill = true;
 
     public void Activate(GestureType gestureType) {
         if (skills.TryGetValue(gestureType, out var skill)) {
