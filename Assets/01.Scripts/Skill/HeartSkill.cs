@@ -1,4 +1,4 @@
-﻿public class HeartSkill : ISkill {
+﻿public class HeartSkill : INormalSkill {
     private const int SpCost = 3;
     
     public GestureType GestureType => GestureType.Heart;

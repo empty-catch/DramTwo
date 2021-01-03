@@ -8,7 +8,7 @@ public class SkillHandler : MonoBehaviour {
     [SerializeField]
     private int specialSkillCooldown = 30;
 
-    private readonly Dictionary<GestureType, ISkill> skills = new Dictionary<GestureType, ISkill>();
+    private readonly Dictionary<GestureType, INormalSkill> skills = new Dictionary<GestureType, INormalSkill>();
 
     private int specialSkillLevel;
     private int gestureCount;
@@ -45,7 +45,7 @@ public class SkillHandler : MonoBehaviour {
         AddNormalSkill(new StarSkill());
     }
 
-    private void AddNormalSkill(ISkill skill) {
+    private void AddNormalSkill(INormalSkill skill) {
         skills.Add(skill.GestureType, skill);
     }
 }
