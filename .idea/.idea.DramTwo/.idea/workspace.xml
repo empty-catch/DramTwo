@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2943b2b7-dc5c-4db4-aefd-621120e43961" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/INormalSkill.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/INormalSkill.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/ISpecialSKill.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/ISpecialSKill.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/Skill/ClockSkill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/ClockSkill.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/Skill/HeartSkill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/HeartSkill.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/Skill/ISkill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/ISkill.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/Skill/LightningSkill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/LightningSkill.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/Skill/StarSkill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/StarSkill.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/SlaughterSkill.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/SlaughterSkill.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +21,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/01.Scripts/System/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/01.Scripts/Skill/ISkill.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/01.Scripts/Skill/Interfaces/ISkill.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/9c/2aa5818d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -50,10 +44,15 @@
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/LightningSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/StarSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/Adrenaline.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/AdrenalineSkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/SlaughterSkill.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1iYHuZf5WJjRE53pTfqgSgm9kbH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -62,7 +61,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="RiderCSharpFileTemplatesSettingsId" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">

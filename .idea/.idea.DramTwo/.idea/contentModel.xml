@@ -43,6 +43,9 @@
             <e p="SkillHandler.cs" t="Include" />
             <e p="SpecialSkill" t="Include">
               <e p="AdrenalineSkill.cs" t="Include" />
+              <e p="AntiBossSkill.cs" t="Include" />
+              <e p="AppleCareSkill.cs" t="Include" />
+              <e p="SlaughterSkill.cs" t="Include" />
             </e>
             <e p="StarSkill.cs" t="Include" />
           </e>
