@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 
@@ -9,7 +10,12 @@ public class SkillHandler : MonoBehaviour {
     private int specialSkillLevel = 0;
 
     public void Activate(GestureType gestureType) {
-        skills[gestureType]?.Activate();
+        if (skills.TryGetValue(gestureType, out var skill)) {
+            skill.Activate();
+        }
+        else {
+            throw new ArgumentException("There is no skill corresponding to the gesture");
+        }
     }
 
     private void Awake() {
