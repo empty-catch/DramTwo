@@ -28,7 +28,8 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
         }
     }
 
-    public void Heal(uint amount) {
-        hp = Mathf.Clamp(hp + (int)amount, 0, MaxPoint);
+    public void Heal() {
+        if (hp != MaxPoint) {
+            hp++;
+        }
     }
-}
