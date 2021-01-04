@@ -12,6 +12,6 @@
             throw new SkillCannotBeUsedException("The player character's HP is full");
         }
 
-        PlayerCharacterController.Instance.Hp++;
+        PlayerCharacterController.Instance.Heal(1);
     }
 }

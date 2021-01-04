@@ -14,24 +14,10 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
     private UnityEvent<GestureType> skillDrawn;
 
     private int hp = MaxPoint;
-    private int sp = MaxPoint;
 
-    public bool IsFullHp => Hp >= MaxPoint;
+    public bool IsFullHp => hp >= MaxPoint;
 
-    public int Hp {
-        get => hp;
-        set {
-            hp = Mathf.Clamp(value, 0, MaxPoint);
-            if (hp == 0) {
-                playerDead?.Invoke();
-            }
-        }
-    }
-
-    public int Sp {
-        get => sp;
-        set => sp = Mathf.Clamp(value, 0, MaxPoint);
-    }
+    public int Sp { get; private set; } = MaxPoint;
 
     public void ProcessGesture(GestureType gestureType) {
         if (gestureType >= GestureType.Lightning) {
@@ -40,5 +26,9 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
         else {
             gestureDrawn?.Invoke(gestureType);
         }
+    }
+
+    public void Heal(uint amount) {
+        hp = Mathf.Clamp(hp + (int)amount, 0, MaxPoint);
     }
 }
