@@ -50,6 +50,8 @@ public abstract class BaseMonster : MonoBehaviour {
         if (imageCanvas.worldCamera == null) {
             imageCanvas.worldCamera = Camera.main;
         }
+
+        speed = defaultSpeed;
     }
 
     public void ActiveMonster() {
@@ -58,8 +60,6 @@ public abstract class BaseMonster : MonoBehaviour {
     }
 
     private void OnEnable() {
-        ResetObject();
-        
         MonsterController.Instance.SubscribeActiveMonster(this);
         
         generateEvent?.Invoke();
@@ -115,6 +115,8 @@ public abstract class BaseMonster : MonoBehaviour {
 
         generateAction = null;
         destroyAction = null;
+        
+        ResetObject();
     }
     
     public virtual void ResetObject() {
