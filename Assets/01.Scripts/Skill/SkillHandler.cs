@@ -28,8 +28,11 @@ public class SkillHandler : MonoBehaviour {
         }
 
         gestureCount = 0;
-        StartCoroutine(Cooldown());
+        CooldownCoroutine().Start();
+        PlayerCharacterController.Instance.ApplyGracePeriodCoroutine(2).Start();
+    }
 
+    private void ApplySpecialSkill() {
         for (var i = 0; i < specialSkillLevel; i++) {
             if (specialSkills.TryGetValue(i, out var skill)) {
                 skill.Activate();
@@ -37,7 +40,7 @@ public class SkillHandler : MonoBehaviour {
         }
     }
 
-    private IEnumerator Cooldown() {
+    private IEnumerator CooldownCoroutine() {
         canActivateSpecialSkill = false;
         yield return Yield.Seconds(specialSkillCooldown);
         canActivateSpecialSkill = true;

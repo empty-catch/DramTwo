@@ -1,3 +1,5 @@
+using System.Collections;
+using Tempus.CoroutineTools;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -14,6 +16,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
     private UnityEvent<GestureType> skillDrawn;
 
     private int hp = MaxPoint;
+    private bool isGracePeriod;
 
     public bool IsFullHp => hp >= MaxPoint;
 
@@ -33,3 +36,10 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
             hp++;
         }
     }
+
+    public IEnumerator ApplyGracePeriodCoroutine(int seconds) {
+        isGracePeriod = true;
+        yield return Yield.Seconds(seconds);
+        isGracePeriod = false;
+    }
+}
