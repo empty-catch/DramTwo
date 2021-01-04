@@ -1,4 +1,4 @@
-﻿public class HeartSkill : ISkill {
+﻿public class HeartSkill : INormalSkill {
     private const int SpCost = 3;
     
     public GestureType GestureType => GestureType.Heart;
@@ -12,6 +12,6 @@
             throw new SkillCannotBeUsedException("The player character's HP is full");
         }
 
-        PlayerCharacterController.Instance.Hp++;
+        PlayerCharacterController.Instance.Heal();
     }
 }

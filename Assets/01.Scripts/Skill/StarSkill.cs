@@ -1,4 +1,4 @@
-﻿public class StarSkill : ISkill {
+﻿public class StarSkill : INormalSkill {
     private const int SpCost = 3;
 
     public GestureType GestureType => GestureType.Star;

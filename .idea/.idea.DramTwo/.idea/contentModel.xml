@@ -14,6 +14,9 @@
             <e p="MonsterHpItem.cs" t="Include" />
             <e p="NormalMonster.cs" t="Include" />
           </e>
+          <e p="MonsterController" t="Include">
+            <e p="MonsterController.cs" t="Include" />
+          </e>
           <e p="MonsterGenerator" t="Include">
             <e p="MonsterFactory.cs" t="Include" />
             <e p="MonsterGenerator.cs" t="Include" />
@@ -25,13 +28,25 @@
             <e p="PlayerCharacterController.cs" t="Include" />
           </e>
           <e p="Skill" t="Include">
-            <e p="ClockSkill.cs" t="Include" />
-            <e p="HeartSkill.cs" t="Include" />
-            <e p="ISkill.cs" t="Include" />
-            <e p="LightningSkill.cs" t="Include" />
+            <e p="Interfaces" t="Include">
+              <e p="INormalSkill.cs" t="Include" />
+              <e p="ISkill.cs" t="Include" />
+              <e p="ISpecialSKill.cs" t="Include" />
+            </e>
+            <e p="NormalSKill" t="Include">
+              <e p="ClockSkill.cs" t="Include" />
+              <e p="HeartSkill.cs" t="Include" />
+              <e p="LightningSkill.cs" t="Include" />
+            </e>
             <e p="NotEnoughSpException.cs" t="Include" />
             <e p="SkillCannotBeUsedException.cs" t="Include" />
             <e p="SkillHandler.cs" t="Include" />
+            <e p="SpecialSkill" t="Include">
+              <e p="AdrenalineSkill.cs" t="Include" />
+              <e p="AntiBossSkill.cs" t="Include" />
+              <e p="AppleCareSkill.cs" t="Include" />
+              <e p="SlaughterSkill.cs" t="Include" />
+            </e>
             <e p="StarSkill.cs" t="Include" />
           </e>
           <e p="System" t="Include">

@@ -1,4 +1,4 @@
-﻿public class LightningSkill : ISkill {
+﻿public class LightningSkill : INormalSkill {
     private const int SpCost = 2;
     
     public GestureType GestureType => GestureType.Lightning;
