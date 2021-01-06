@@ -7,7 +7,7 @@ using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public abstract class BaseMonster : MonoBehaviour {
-    private MonsterHpItem[] hpItems;
+    private MonsterHpItemContext[] hpItems;
         
     [Header("Values")]
     [SerializeField]
@@ -44,7 +44,7 @@ public abstract class BaseMonster : MonoBehaviour {
     }
     
     private void Awake() {
-        hpItems = gameObject.GetComponentsInChildren<MonsterHpItem>(true);
+        hpItems = gameObject.GetComponentsInChildren<MonsterHpItemContext>(true);
         
         var imageCanvas = gameObject.GetComponentInChildren<Canvas>();
         if (imageCanvas.worldCamera == null) {
@@ -78,7 +78,7 @@ public abstract class BaseMonster : MonoBehaviour {
     public virtual void GetDamaged(int damage) {
         hp -= damage;
         
-        if ( hp <= 0) {
+        if (hp <= 0) {
             Death();
         }
     }
