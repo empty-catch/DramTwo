@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &55013828 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8073920241763627203, guid: 855638285aa6b4f4aa189d3a8a7ea9b4, type: 3}
-  m_PrefabInstance: {fileID: 8073920242133835915}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &110805348
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,10 +290,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1869596151449344008, guid: 88f38040cef401041859737baf573dcb, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 2129512970}
     - target: {fileID: 6327282866067677488, guid: 88f38040cef401041859737baf573dcb, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -347,10 +338,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Character
       objectReference: {fileID: 0}
-    - target: {fileID: 6327282866067677491, guid: 88f38040cef401041859737baf573dcb, type: 3}
-      propertyPath: gestureDrawn.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 55013828}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88f38040cef401041859737baf573dcb, type: 3}
 --- !u!1001 &8073920242133835915
