@@ -342,6 +342,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Character
       objectReference: {fileID: 0}
+    - target: {fileID: 6327282866067677491, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: skillDrawn.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327282866067677491, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: gestureDrawn.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88f38040cef401041859737baf573dcb, type: 3}
 --- !u!1001 &8073920242133835915

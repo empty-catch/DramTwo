@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Tempus.CoroutineTools;
 using UnityEngine;
 
-public class SkillHandler : MonoBehaviour {
+public class SkillHandler : SingletonObject<SkillHandler> {
     [SerializeField]
     private int specialSkillCooldown = 30;
 
@@ -12,8 +12,10 @@ public class SkillHandler : MonoBehaviour {
     private readonly Dictionary<int, ISkill> specialSkills = new Dictionary<int, ISkill>();
 
     private int specialSkillLevel;
-    private int gestureCount;
+    private int gestureUsageCount;
     private bool canActivateSpecialSkill = true;
+
+    public int GestureCount => transform.GetChild(0).childCount;
 
     public void Activate(GestureType gestureType) {
         if (skills.TryGetValue(gestureType, out var skill)) {
@@ -22,12 +24,12 @@ public class SkillHandler : MonoBehaviour {
     }
 
     public void ActivateSpecialSkill() {
-        if (canActivateSpecialSkill == false || gestureCount < 100) {
-            gestureCount++;
+        if (canActivateSpecialSkill == false || gestureUsageCount < 100) {
+            gestureUsageCount++;
             return;
         }
 
-        gestureCount = 0;
+        gestureUsageCount = 0;
         CooldownCoroutine().Start();
         PlayerCharacterController.Instance.ApplyGracePeriodCoroutine(2).Start();
     }
