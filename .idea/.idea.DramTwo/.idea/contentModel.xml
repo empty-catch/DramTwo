@@ -11,7 +11,7 @@
         <e p="01.Scripts" t="Include">
           <e p="Context" t="Include">
             <e p="GameObjectsActiveSetter.cs" t="Include" />
-            <e p="PlayerGestureContext.cs" t="Include" />
+            <e p="PlayerCharacterContext.cs" t="Include" />
           </e>
           <e p="Monster" t="Include">
             <e p="BaseMonster.cs" t="Include" />

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Tempus.CoroutineTools;
 using UnityEngine;
@@ -14,8 +13,6 @@ public class SkillHandler : SingletonObject<SkillHandler> {
     private int specialSkillLevel;
     private int gestureUsageCount;
     private bool canActivateSpecialSkill = true;
-
-    public int GestureCount => transform.GetChild(0).childCount;
 
     public void Activate(GestureType gestureType) {
         if (skills.TryGetValue(gestureType, out var skill)) {
