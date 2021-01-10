@@ -33,7 +33,7 @@ public class SkillHandler : MonoBehaviour {
     }
 
     private void ApplySpecialSkill() {
-        for (var i = 0; i < specialSkillLevel; i++) {
+        for (var i = 0; i < specialSkillLevel + 1; i++) {
             if (specialSkills.TryGetValue(i, out var skill)) {
                 skill.Activate();
             }

@@ -13,7 +13,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
 
     public const int GestureCount = 5;
     private const int MaxPoint = 6;
-    private const float TimerDuration = 4f;
+    private const float TimerDuration = 100f;
 
     [SerializeField]
     private UnityEvent playerDead;
