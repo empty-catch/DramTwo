@@ -48,10 +48,9 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
         }
     }
 
-    public IEnumerator ApplyGracePeriodCoroutine(int seconds) {
+    public void ApplyGracePeriod(int seconds) {
         isGracePeriod = true;
-        yield return Yield.Seconds(seconds);
-        isGracePeriod = false;
+        DOVirtual.DelayedCall(seconds, () => isGracePeriod = false);
     }
 
     public void Foo() {

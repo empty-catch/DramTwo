@@ -28,7 +28,7 @@ public class SkillHandler : MonoBehaviour {
 
         gestureUsageCount = 0;
         CooldownCoroutine().Start();
-        PlayerCharacterController.Instance.ApplyGracePeriodCoroutine(2).Start();
+        PlayerCharacterController.Instance.ApplyGracePeriod(2);
         PlayerCharacterController.Instance.Foo();
     }
 
