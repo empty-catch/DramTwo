@@ -47,6 +47,8 @@ public class SkillHandler : MonoBehaviour {
     }
 
     private void Awake() {
+        PlayerCharacterController.Instance.SpecialSkillApplied += ApplySpecialSkill;
+
         AddNormalSkill(new LightningSkill());
         AddNormalSkill(new HeartSkill());
         AddNormalSkill(new ClockSkill());
