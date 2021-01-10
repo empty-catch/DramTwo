@@ -10,7 +10,8 @@
       <e p="Assets" t="Include">
         <e p="01.Scripts" t="Include">
           <e p="Context" t="Include">
-            <e p="GameObjectsActiveSetter.cs" t="Include" />
+            <e p="ActiveCollectionSetter.cs" t="Include" />
+            <e p="ImageSpriteCollectionSetter.cs" t="Include" />
             <e p="PlayerCharacterContext.cs" t="Include" />
           </e>
           <e p="Monster" t="Include">

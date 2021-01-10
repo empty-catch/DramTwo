@@ -1,9 +1,16 @@
+using System;
 using System.Collections;
 using Tempus.CoroutineTools;
 using UnityEngine;
 using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
 public class PlayerCharacterController : SingletonObject<PlayerCharacterController> {
+    public event Action<float> TimerFilled;
+    public event Action<int, bool> GestureActiveSet;
+    public event Action<int, Sprite> GestureSpriteSet;
+
+    public const int GestureCount = 5;
     private const int MaxPoint = 6;
 
     [SerializeField]
@@ -41,5 +48,17 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
         isGracePeriod = true;
         yield return Yield.Seconds(seconds);
         isGracePeriod = false;
+    }
+
+    public void Foo() {
+        var gestures = new GestureType[GestureCount];
+        var g = Enum.GetValues(typeof(GestureType));
+
+        for (var i = 0; i < GestureCount; i++) {
+            gestures[i] = (GestureType) g.GetValue(Random.Range(0, g.Length));
+            GestureActiveSet?.Invoke(i, true);
+        }
+
+        TimerFilled?.Invoke(1f);
     }
 }

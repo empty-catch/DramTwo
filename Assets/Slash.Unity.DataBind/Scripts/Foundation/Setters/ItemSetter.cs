@@ -1,6 +1,6 @@
 ﻿namespace Slash.Unity.DataBind.Foundation.Setters
 {
-    /// <summary>
+    /// <summary>                                           
     ///   Base class for a setter which uses a data property to determine if an item is shown
     ///   beneath the game object of the target component.
     /// </summary>
@@ -12,7 +12,7 @@
 
         #endregion
 
-        #region Methods
+            #region Methods
 
         /// <summary>
         ///   Changes the context of an existing item.

@@ -1,22 +1,33 @@
-﻿using Slash.Unity.DataBind.Core.Data;
+﻿using System.Collections;
+using Slash.Unity.DataBind.Core.Data;
+using Tempus.CoroutineTools;
+using UnityEngine;
 
 public class PlayerCharacterContext : Context {
-    private const int GestureCount = 5;
+    private readonly Property<float> timerFillProperty = new Property<float>();
 
-    private Property<bool[]> gestureActiveProperty = new Property<bool[]>();
-    private Property<float> timerFillProperty = new Property<float>();
+    private readonly Property<Collection<bool>>
+        activesProperty = new Property<Collection<bool>>(new Collection<bool>());
+
+    private readonly Property<Collection<Sprite>> spritesProperty =
+        new Property<Collection<Sprite>>(new Collection<Sprite>());
 
     public PlayerCharacterContext() {
-        GestureActive = new bool[GestureCount];
-    }
+        for (var i = 0; i < PlayerCharacterController.GestureCount; i++) {
+            Actives.Add(false);
+            Sprites.Add(null);
+        }
 
-    public bool[] GestureActive {
-        get => gestureActiveProperty.Value;
-        private set => gestureActiveProperty.Value = value;
+        PlayerCharacterController.Instance.TimerFilled += fillAmount => TimerFill = fillAmount;
+        PlayerCharacterController.Instance.GestureActiveSet += (index, active) => Actives[index] = active;
+        PlayerCharacterController.Instance.GestureSpriteSet += (index, sprite) => Sprites[index] = sprite;
     }
 
     public float TimerFill {
         get => timerFillProperty.Value;
         private set => timerFillProperty.Value = value;
     }
+
+    public Collection<bool> Actives => activesProperty.Value;
+    public Collection<Sprite> Sprites => spritesProperty.Value;
 }
