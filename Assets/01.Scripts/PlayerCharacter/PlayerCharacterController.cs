@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using DG.Tweening;
 using Tempus.CoroutineTools;
 using UnityEngine;
 using UnityEngine.Events;
@@ -12,6 +14,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
 
     public const int GestureCount = 5;
     private const int MaxPoint = 6;
+    private const float TimerDuration = 4f;
 
     [SerializeField]
     private UnityEvent playerDead;
@@ -24,6 +27,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
 
     private int hp = MaxPoint;
     private bool isGracePeriod;
+    private readonly Queue<GestureType> gesturesToMatch = new Queue<GestureType>();
 
     public bool IsFullHp => hp >= MaxPoint;
 
@@ -51,14 +55,17 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
     }
 
     public void Foo() {
-        var gestures = new GestureType[GestureCount];
-        var g = Enum.GetValues(typeof(GestureType));
+        var allGestures = Enum.GetValues(typeof(GestureType));
 
         for (var i = 0; i < GestureCount; i++) {
-            gestures[i] = (GestureType) g.GetValue(Random.Range(0, g.Length));
+            var gesture = (GestureType) allGestures.GetValue(Random.Range(0, allGestures.Length));
+            gesturesToMatch.Enqueue(gesture);
             GestureActiveSet?.Invoke(i, true);
         }
 
-        TimerFilled?.Invoke(1f);
+        var fillAmount = 1f;
+        DOTween.To(() => fillAmount, value => fillAmount = value, 0f, TimerDuration)
+            .SetEase(Ease.Linear)
+            .OnUpdate(() => TimerFilled?.Invoke(fillAmount));
     }
 }

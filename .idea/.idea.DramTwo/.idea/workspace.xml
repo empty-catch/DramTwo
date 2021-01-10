@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2943b2b7-dc5c-4db4-aefd-621120e43961" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/01.Scripts/Context/ActiveCollectionSetter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/01.Scripts/Context/ImageSpriteCollectionSetter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/01.Scripts/Context/ImageSpriteCollectionSetter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00.Scenes/PcyWorkspace.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00.Scenes/PcyWorkspace.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/Context/GameObjectsActiveSetter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/Context/GameObjectsActiveSetter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/Context/ActiveCollectionSetter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/Context/PlayerCharacterContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/Context/PlayerCharacterContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03.Prefabs/Player Character/Player Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Prefabs/Player Character/Player Character.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Slash.Unity.DataBind/Scripts/Foundation/Setters/ItemSetter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Slash.Unity.DataBind/Scripts/Foundation/Setters/ItemSetter.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +65,11 @@
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/ActiveIndexSetter.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/ImageSpriteIndexSetter.cs" />
       <option value="$PROJECT_DIR$/Assets/Slash.Unity.DataBind/Scripts/Core/Data/Collection.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/PlayerCharacterContext.cs" />
       <option value="$PROJECT_DIR$/Assets/Slash.Unity.DataBind/Scripts/Foundation/Setters/ItemSetter.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/ActiveCollectionSetter.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/ImageSpriteCollectionSetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/PlayerCharacterContext.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1iYHuZf5WJjRE53pTfqgSgm9kbH" />
