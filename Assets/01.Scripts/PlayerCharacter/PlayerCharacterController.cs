@@ -81,6 +81,23 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
         DOTween.To(() => fillAmount, value => fillAmount = value, 0f, TimerDuration)
             .SetEase(Ease.Linear)
             .OnUpdate(() => TimerFilled?.Invoke(fillAmount))
-            .OnComplete(() => usingSpecialSkill = false);
+            .OnComplete(() => {
+                usingSpecialSkill = false;
+                FailurePenalty();
+            });
+    }
+
+    private void FailurePenalty() {
+        if (Random.Range(0, 2) == 0) {
+            hp = 1;
+        }
+        else {
+            if (Sp == 0) {
+                // 그림 그리기 3초동안 봉인
+            }
+            else {
+                Sp = 0;
+            }
+        }
     }
 }
