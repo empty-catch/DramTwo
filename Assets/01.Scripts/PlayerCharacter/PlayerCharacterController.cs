@@ -38,7 +38,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
             gesturesToMatch.Dequeue();
 
             if (gesturesToMatch.Count == 0) {
-                // UI 정리 및 트윈 제거 해야함
+                // TODO: UI 정리 및 트윈 제거 해야함
                 usingSpecialSkill = false;
                 SpecialSkillApplied?.Invoke();
             }
@@ -93,7 +93,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
         }
         else {
             if (Sp == 0) {
-                // 그림 그리기 3초동안 봉인
+                // TODO: 그림 그리기 3초동안 봉인
             }
             else {
                 Sp = 0;
