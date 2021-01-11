@@ -10,19 +10,12 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
     public event Action<int, bool> GestureActiveSet;
     public event Action<int, Sprite> GestureSpriteSet;
     public event Action SpecialSkillApplied;
+    public event Action<GestureType> GestureDrawn;
+    public event Action<GestureType> SkillDrawn;
 
     public const int GestureCount = 5;
     private const int MaxPoint = 6;
     private const float TimerDuration = 100f;
-
-    [SerializeField]
-    private UnityEvent playerDead;
-
-    [SerializeField]
-    private UnityEvent<GestureType> gestureDrawn;
-
-    [SerializeField]
-    private UnityEvent<GestureType> skillDrawn;
 
     private int hp = MaxPoint;
     private bool isGracePeriod;
@@ -46,11 +39,11 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
 
         if (gestureType >= GestureType.Lightning) {
             if (usingSpecialSkill == false) {
-                skillDrawn?.Invoke(gestureType);
+                SkillDrawn?.Invoke(gestureType);
             }
         }
         else {
-            gestureDrawn?.Invoke(gestureType);
+            GestureDrawn?.Invoke(gestureType);
         }
     }
 

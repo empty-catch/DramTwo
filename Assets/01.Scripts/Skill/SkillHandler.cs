@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Tempus.CoroutineTools;
 using UnityEngine;
@@ -48,6 +49,8 @@ public class SkillHandler : MonoBehaviour {
 
     private void Awake() {
         PlayerCharacterController.Instance.SpecialSkillApplied += ApplySpecialSkill;
+        PlayerCharacterController.Instance.SkillDrawn += Activate;
+        PlayerCharacterController.Instance.GestureDrawn += _ => ActivateSpecialSkill();
 
         AddNormalSkill(new LightningSkill());
         AddNormalSkill(new HeartSkill());
