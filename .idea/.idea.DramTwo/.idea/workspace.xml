@@ -73,6 +73,7 @@
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/AdrenalineSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/AppleCareSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/NormalSkill/HeartSkill.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1iYHuZf5WJjRE53pTfqgSgm9kbH" />

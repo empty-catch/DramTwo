@@ -25,11 +25,14 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
     [SerializeField]
     private float moveSpeed;
 
-    private int hp;
-    private float moveSpeedMultiplier;
     private bool isGracePeriod;
     private bool usingSpecialSkill;
     private bool protectionApplied;
+
+    private int hp;
+    private float moveSpeedMultiplier;
+    private Tweener tweener;
+
     private readonly Queue<GestureType> gesturesToMatch = new Queue<GestureType>();
 
     public bool IsFullHp => hp >= maxPoint;
@@ -47,8 +50,9 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
             gesturesToMatch.Dequeue();
 
             if (gesturesToMatch.Count == 0) {
-                // TODO: UI 정리 및 트윈 제거 해야함
                 usingSpecialSkill = false;
+                tweener?.Kill();
+                TimerFilled?.Invoke(0f);
                 SpecialSkillApplied?.Invoke();
             }
         }
@@ -103,7 +107,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
         var fillAmount = 1f;
         usingSpecialSkill = true;
 
-        DOTween.To(() => fillAmount, value => fillAmount = value, 0f, timerDuration)
+        tweener = DOTween.To(() => fillAmount, value => fillAmount = value, 0f, timerDuration)
             .SetEase(Ease.Linear)
             .OnUpdate(() => TimerFilled?.Invoke(fillAmount))
             .OnComplete(() => {
