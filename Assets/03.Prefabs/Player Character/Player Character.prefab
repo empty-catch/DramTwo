@@ -663,39 +663,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c498c393ec421470c82d2c4c2ba6289e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDead:
-    m_PersistentCalls:
-      m_Calls: []
-  gestureDrawn:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6327282865253927175}
-        m_TargetAssemblyTypeName: SkillHandler, Assembly-CSharp
-        m_MethodName: ActivateSpecialSkill
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  skillDrawn:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6327282865253927175}
-        m_TargetAssemblyTypeName: SkillHandler, Assembly-CSharp
-        m_MethodName: Activate
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  gestureCount: 5
+  maxPoint: 6
+  timerDuration: 6
+  moveSpeed: 5
 --- !u!1 &6775922953177803932
 GameObject:
   m_ObjectHideFlags: 0

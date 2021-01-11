@@ -13,7 +13,7 @@ public class PlayerCharacterContext : Context {
         new Property<Collection<Sprite>>(new Collection<Sprite>());
 
     public PlayerCharacterContext() {
-        for (var i = 0; i < PlayerCharacterController.GestureCount; i++) {
+        for (var i = 0; i < PlayerCharacterController.Instance.GestureCount; i++) {
             Actives.Add(false);
             Sprites.Add(null);
         }

@@ -13,18 +13,32 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
     public event Action<GestureType> GestureDrawn;
     public event Action<GestureType> SkillDrawn;
 
-    public const int GestureCount = 5;
-    private const int MaxPoint = 6;
-    private const float TimerDuration = 100f;
+    [SerializeField]
+    private int gestureCount;
 
-    private int hp = MaxPoint;
+    [SerializeField]
+    private int maxPoint;
+
+    [SerializeField]
+    private float timerDuration;
+
+    [SerializeField]
+    private float moveSpeed;
+
+    private int hp;
     private bool isGracePeriod;
     private bool usingSpecialSkill;
     private readonly Queue<GestureType> gesturesToMatch = new Queue<GestureType>();
 
-    public bool IsFullHp => hp >= MaxPoint;
+    public bool IsFullHp => hp >= maxPoint;
+    public int GestureCount => gestureCount;
 
-    public int Sp { get; private set; } = MaxPoint;
+    public int Sp { get; private set; }
+
+    private void Awake() {
+        hp = maxPoint;
+        Sp = maxPoint;
+    }
 
     public void ProcessGesture(GestureType gestureType) {
         if (usingSpecialSkill && gestureType == gesturesToMatch.Peek()) {
@@ -48,7 +62,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
     }
 
     public void Heal() {
-        if (hp != MaxPoint) {
+        if (hp != maxPoint) {
             hp++;
         }
     }
@@ -71,7 +85,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
         var fillAmount = 1f;
         usingSpecialSkill = true;
 
-        DOTween.To(() => fillAmount, value => fillAmount = value, 0f, TimerDuration)
+        DOTween.To(() => fillAmount, value => fillAmount = value, 0f, timerDuration)
             .SetEase(Ease.Linear)
             .OnUpdate(() => TimerFilled?.Invoke(fillAmount))
             .OnComplete(() => {
