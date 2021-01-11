@@ -26,6 +26,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
     private float moveSpeed;
 
     private int hp;
+    private float moveSpeedMultiplier;
     private bool isGracePeriod;
     private bool usingSpecialSkill;
     private readonly Queue<GestureType> gesturesToMatch = new Queue<GestureType>();
@@ -65,6 +66,11 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
         if (hp != maxPoint) {
             hp++;
         }
+    }
+
+    public void AdjustMoveSpeed(float multiplier, float seconds) {
+        moveSpeedMultiplier = multiplier;
+        DOVirtual.DelayedCall(seconds, () => moveSpeedMultiplier = 1f);
     }
 
     public void ApplyGracePeriod(int seconds) {
