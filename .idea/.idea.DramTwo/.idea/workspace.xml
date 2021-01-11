@@ -55,7 +55,6 @@
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/SlaughterSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/AntiBossSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/Interfaces/ISpecialSkill.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/AppleCareSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/ArrayToValueProvider.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/BoolArrayProvider.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/PlayerGestureContext.cs" />
@@ -69,10 +68,11 @@
       <option value="$PROJECT_DIR$/Assets/Slash.Unity.DataBind/Scripts/Foundation/Setters/ItemSetter.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/ActiveCollectionSetter.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/ImageSpriteCollectionSetter.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/AdrenalineSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/PlayerCharacterContext.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/AdrenalineSkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/AppleCareSkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1iYHuZf5WJjRE53pTfqgSgm9kbH" />

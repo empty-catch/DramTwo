@@ -29,6 +29,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
     private float moveSpeedMultiplier;
     private bool isGracePeriod;
     private bool usingSpecialSkill;
+    private bool protectionApplied;
     private readonly Queue<GestureType> gesturesToMatch = new Queue<GestureType>();
 
     public bool IsFullHp => hp >= maxPoint;
@@ -62,10 +63,21 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
         }
     }
 
-    public void Heal() {
-        if (hp != maxPoint) {
-            hp++;
+    public void GetDamaged(int amount) {
+        if (protectionApplied) {
+            protectionApplied = false;
         }
+        else {
+            hp = Mathf.Clamp(hp - amount, 0, hp);
+        }
+    }
+
+    public void Heal(int amount) {
+        hp = Mathf.Clamp(hp + amount, hp, maxPoint);
+    }
+
+    public void ApplyProtection() {
+        protectionApplied = true;
     }
 
     public void AdjustMoveSpeed(float multiplier, float seconds) {
