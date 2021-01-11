@@ -49,13 +49,14 @@ public class GestureDrawer : MonoBehaviour {
 
     private IEnumerable<Gesture> Gestures => gestureInfos.Select(info => info.Gesture);
 
-    public void BlockDrawing(float seconds) {
+    private void BlockDrawing(float seconds) {
         canDraw = false;
         DOVirtual.DelayedCall(seconds, () => canDraw = true);
     }
 
     private void Awake() {
         camera = Camera.main;
+        PlayerCharacterController.Instance.SpecialSkillFailed += BlockDrawing;
     }
 
     private void Update() {

@@ -12,6 +12,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
     public event Action SpecialSkillApplied;
     public event Action<GestureType> GestureDrawn;
     public event Action<GestureType> SkillDrawn;
+    public event Action<float> SpecialSkillFailed;
 
     [SerializeField]
     private int gestureCount;
@@ -122,7 +123,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
         }
         else {
             if (Sp == 0) {
-                // TODO: 그림 그리기 3초동안 봉인
+                SpecialSkillFailed?.Invoke(3f);
             }
             else {
                 Sp = 0;
