@@ -41,7 +41,6 @@
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/Skill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/NotEnoughSpException.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillCannotBeUsedException.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureCounter.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/ISkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/INormalSkill.cs" />
@@ -72,8 +71,10 @@
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/PlayerCharacterContext.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/AdrenalineSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/AppleCareSkill.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/NormalSkill/HeartSkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureDrawer.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureResources.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1iYHuZf5WJjRE53pTfqgSgm9kbH" />
