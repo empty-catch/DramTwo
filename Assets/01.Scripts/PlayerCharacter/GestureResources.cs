@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Gesture Resources", menuName = "Scriptable Object/Gesture Resources", order = 0)]
@@ -35,7 +34,8 @@ public class GestureResources : ScriptableObject {
             items[info.gesture] = info.sprite;
         }
     }
-
+    
+    [Serializable]
     private struct Info {
         public GestureType gesture;
         public Sprite sprite;

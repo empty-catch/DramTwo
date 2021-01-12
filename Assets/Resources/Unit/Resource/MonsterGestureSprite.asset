@@ -12,30 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 309a90e5ce5f4679b56bc0f37a285dd7, type: 3}
   m_Name: MonsterGestureSprite
   m_EditorClassIdentifier: 
-  monsterGestureResources:
-  - name: 1
-    gestureSprite: {fileID: 0}
-  - name: 2
-    gestureSprite: {fileID: 0}
-  - name: 3
-    gestureSprite: {fileID: 0}
-  - name: 4
-    gestureSprite: {fileID: 0}
-  - name: 5
-    gestureSprite: {fileID: 0}
-  - name: 6
-    gestureSprite: {fileID: 0}
-  - name: 7
-    gestureSprite: {fileID: 0}
-  - name: 8
-    gestureSprite: {fileID: 0}
-  - name: 9
-    gestureSprite: {fileID: 0}
-  - name: 10
-    gestureSprite: {fileID: 0}
-  - name: 11
-    gestureSprite: {fileID: 0}
-  - name: 12
-    gestureSprite: {fileID: 0}
-  - name: 13
-    gestureSprite: {fileID: 0}
+  monsterGestureResources: []
