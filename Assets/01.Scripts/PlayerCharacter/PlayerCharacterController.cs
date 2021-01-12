@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
@@ -96,12 +97,14 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
     }
 
     public void Foo() {
-        var allGestures = Enum.GetValues(typeof(GestureType));
+        var allGestures = GestureResources.Instance.AllGestures;
+        var count = allGestures.Count();
 
         for (var i = 0; i < GestureCount; i++) {
-            var gesture = (GestureType) allGestures.GetValue(Random.Range(1, allGestures.Length));
+            var gesture = allGestures.ElementAt(Random.Range(0, count - 1));
             gesturesToMatch.Enqueue(gesture);
             GestureActiveSet?.Invoke(i, true);
+            GestureSpriteSet?.Invoke(i, GestureResources.Instance.Sprite(gesture));
             gesture.Log();
         }
 
