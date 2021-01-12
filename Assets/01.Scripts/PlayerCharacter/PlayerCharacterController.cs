@@ -49,6 +49,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
 
     public void ProcessGesture(GestureType gestureType) {
         if (usingSpecialSkill && gestureType == gesturesToMatch.Peek()) {
+            GestureActiveSet?.Invoke(GestureCount - gesturesToMatch.Count, false);
             gesturesToMatch.Dequeue();
 
             if (gesturesToMatch.Count == 0) {
