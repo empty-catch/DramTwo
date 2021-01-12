@@ -14,7 +14,7 @@ public class GestureResources : ScriptableObject {
                 return instance;
             }
 
-            instance = Resources.Load<GestureResources>("Unit/Resource/");
+            instance = Resources.Load<GestureResources>("Unit/Resource/Gesture Resources");
             return instance;
         }
     }
