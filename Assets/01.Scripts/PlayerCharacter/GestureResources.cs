@@ -6,15 +6,15 @@ using UnityEngine;
 public class GestureResources : ScriptableObject {
     #region Singleton
 
-    private static MonsterGestureResources instance;
+    private static GestureResources instance;
 
-    public static MonsterGestureResources Instance {
+    public static GestureResources Instance {
         get {
             if (instance != null) {
                 return instance;
             }
 
-            instance = Resources.Load<MonsterGestureResources>("Unit/Resource/");
+            instance = Resources.Load<GestureResources>("Unit/Resource/");
             return instance;
         }
     }
