@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1531961823577088330}
   - component: {fileID: 8689172257380331166}
   - component: {fileID: 31263832573881596}
-  - component: {fileID: 3783742908929503630}
-  - component: {fileID: 222807469682019233}
+  - component: {fileID: 6585401147300637861}
+  - component: {fileID: 8806334597081250356}
   m_Layer: 5
   m_Name: Gesture_01
   m_TagString: Untagged
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3783742908929503630
+--- !u!114 &6585401147300637861
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,12 +86,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 171898607782395714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 126bba0be6fe4fa5a348907c52271579, type: 3}
+  m_Script: {fileID: 11500000, guid: ae8eb38144f02dd43a55dde5d4aa9bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Data:
     Constant: 
-    Path: Actives
+    Path: Gesture1.Active
     Provider: {fileID: 0}
     Reference: {fileID: 0}
     Type: 0
@@ -102,8 +102,8 @@ MonoBehaviour:
     Reference: {fileID: 171898607782395714}
     Type: 3
   constantTarget: {fileID: 0}
-  index: 1
---- !u!114 &222807469682019233
+  DontDisableOnInactive: 1
+--- !u!114 &8806334597081250356
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,12 +112,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 171898607782395714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d674390c982444eda77dc5555d62ed90, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ef3543789a5afb45a92d7e0e592f9b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Data:
     Constant: 
-    Path: Sprites
+    Path: Gesture1.Sprite
     Provider: {fileID: 0}
     Reference: {fileID: 0}
     Type: 0
@@ -128,7 +128,6 @@ MonoBehaviour:
     Reference: {fileID: 31263832573881596}
     Type: 3
   constantTarget: {fileID: 0}
-  index: 1
 --- !u!1 &2119160062251971553
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,8 +139,8 @@ GameObject:
   - component: {fileID: 4005844192261741970}
   - component: {fileID: 8270801814340033007}
   - component: {fileID: 8973622386923080202}
-  - component: {fileID: 4954923230825149467}
-  - component: {fileID: 8569608015688710393}
+  - component: {fileID: 4615728629796157036}
+  - component: {fileID: 8843675800570788219}
   m_Layer: 5
   m_Name: Gesture_00
   m_TagString: Untagged
@@ -206,7 +205,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4954923230825149467
+--- !u!114 &4615728629796157036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -215,12 +214,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2119160062251971553}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 126bba0be6fe4fa5a348907c52271579, type: 3}
+  m_Script: {fileID: 11500000, guid: ae8eb38144f02dd43a55dde5d4aa9bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Data:
     Constant: 
-    Path: Actives
+    Path: Gesture0.Active
     Provider: {fileID: 0}
     Reference: {fileID: 0}
     Type: 0
@@ -231,8 +230,8 @@ MonoBehaviour:
     Reference: {fileID: 2119160062251971553}
     Type: 3
   constantTarget: {fileID: 0}
-  index: 0
---- !u!114 &8569608015688710393
+  DontDisableOnInactive: 1
+--- !u!114 &8843675800570788219
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -241,12 +240,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2119160062251971553}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d674390c982444eda77dc5555d62ed90, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ef3543789a5afb45a92d7e0e592f9b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Data:
     Constant: 
-    Path: Sprites
+    Path: Gesture0.Sprite
     Provider: {fileID: 0}
     Reference: {fileID: 0}
     Type: 0
@@ -257,7 +256,6 @@ MonoBehaviour:
     Reference: {fileID: 8973622386923080202}
     Type: 3
   constantTarget: {fileID: 0}
-  index: 0
 --- !u!1 &2656418042706365496
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,8 +267,8 @@ GameObject:
   - component: {fileID: 110794793046968809}
   - component: {fileID: 3883322192558562365}
   - component: {fileID: 6225896285949153483}
-  - component: {fileID: 4024750098294176559}
-  - component: {fileID: 1092880664560464064}
+  - component: {fileID: 253918862550623693}
+  - component: {fileID: 9075847007939949652}
   m_Layer: 5
   m_Name: Gesture_02
   m_TagString: Untagged
@@ -335,7 +333,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4024750098294176559
+--- !u!114 &253918862550623693
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -344,12 +342,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2656418042706365496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 126bba0be6fe4fa5a348907c52271579, type: 3}
+  m_Script: {fileID: 11500000, guid: ae8eb38144f02dd43a55dde5d4aa9bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Data:
     Constant: 
-    Path: Actives
+    Path: Gesture2.Active
     Provider: {fileID: 0}
     Reference: {fileID: 0}
     Type: 0
@@ -360,8 +358,8 @@ MonoBehaviour:
     Reference: {fileID: 2656418042706365496}
     Type: 3
   constantTarget: {fileID: 0}
-  index: 2
---- !u!114 &1092880664560464064
+  DontDisableOnInactive: 1
+--- !u!114 &9075847007939949652
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -370,12 +368,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2656418042706365496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d674390c982444eda77dc5555d62ed90, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ef3543789a5afb45a92d7e0e592f9b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Data:
     Constant: 
-    Path: Sprites
+    Path: Gesture2.Sprite
     Provider: {fileID: 0}
     Reference: {fileID: 0}
     Type: 0
@@ -386,7 +384,6 @@ MonoBehaviour:
     Reference: {fileID: 6225896285949153483}
     Type: 3
   constantTarget: {fileID: 0}
-  index: 2
 --- !u!1 &2849181761890382241
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,8 +675,8 @@ GameObject:
   - component: {fileID: 76880113629503440}
   - component: {fileID: 5650917923661030004}
   - component: {fileID: 7979672646077234406}
-  - component: {fileID: 5645714376006773268}
-  - component: {fileID: 3331897313778659025}
+  - component: {fileID: 2591495515262314830}
+  - component: {fileID: 4232633023694715288}
   m_Layer: 5
   m_Name: Gesture_03
   m_TagString: Untagged
@@ -744,7 +741,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5645714376006773268
+--- !u!114 &2591495515262314830
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -753,12 +750,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6775922953177803932}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 126bba0be6fe4fa5a348907c52271579, type: 3}
+  m_Script: {fileID: 11500000, guid: ae8eb38144f02dd43a55dde5d4aa9bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Data:
     Constant: 
-    Path: Actives
+    Path: Gesture3.Active
     Provider: {fileID: 0}
     Reference: {fileID: 0}
     Type: 0
@@ -769,8 +766,8 @@ MonoBehaviour:
     Reference: {fileID: 6775922953177803932}
     Type: 3
   constantTarget: {fileID: 0}
-  index: 3
---- !u!114 &3331897313778659025
+  DontDisableOnInactive: 1
+--- !u!114 &4232633023694715288
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -779,12 +776,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6775922953177803932}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d674390c982444eda77dc5555d62ed90, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ef3543789a5afb45a92d7e0e592f9b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Data:
     Constant: 
-    Path: Sprites
+    Path: Gesture3.Sprite
     Provider: {fileID: 0}
     Reference: {fileID: 0}
     Type: 0
@@ -795,7 +792,6 @@ MonoBehaviour:
     Reference: {fileID: 7979672646077234406}
     Type: 3
   constantTarget: {fileID: 0}
-  index: 3
 --- !u!1 &8557386119676302858
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,8 +870,8 @@ GameObject:
   - component: {fileID: 6135688656246955079}
   - component: {fileID: 2794534277944953817}
   - component: {fileID: 4759455962349542297}
-  - component: {fileID: 7840598184088157108}
-  - component: {fileID: 9017218931518596419}
+  - component: {fileID: 6066678014136703059}
+  - component: {fileID: 1084657056153121880}
   m_Layer: 5
   m_Name: Gesture_04
   m_TagString: Untagged
@@ -940,7 +936,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7840598184088157108
+--- !u!114 &6066678014136703059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -949,12 +945,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 9149625395055557947}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 126bba0be6fe4fa5a348907c52271579, type: 3}
+  m_Script: {fileID: 11500000, guid: ae8eb38144f02dd43a55dde5d4aa9bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Data:
     Constant: 
-    Path: Actives
+    Path: Gesture4.Active
     Provider: {fileID: 0}
     Reference: {fileID: 0}
     Type: 0
@@ -965,8 +961,8 @@ MonoBehaviour:
     Reference: {fileID: 9149625395055557947}
     Type: 3
   constantTarget: {fileID: 0}
-  index: 4
---- !u!114 &9017218931518596419
+  DontDisableOnInactive: 1
+--- !u!114 &1084657056153121880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -975,12 +971,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 9149625395055557947}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d674390c982444eda77dc5555d62ed90, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ef3543789a5afb45a92d7e0e592f9b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Data:
     Constant: 
-    Path: Sprites
+    Path: Gesture4.Sprite
     Provider: {fileID: 0}
     Reference: {fileID: 0}
     Type: 0
@@ -991,4 +987,3 @@ MonoBehaviour:
     Reference: {fileID: 4759455962349542297}
     Type: 3
   constantTarget: {fileID: 0}
-  index: 4
