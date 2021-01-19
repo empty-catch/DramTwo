@@ -118,6 +118,10 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
             .OnComplete(() => {
                 usingSpecialSkill = false;
                 FailurePenalty();
+
+                for (var i = 0; i < GestureCount; i++) {
+                    GestureActiveSet?.Invoke(i, false);
+                }
             });
     }
 
