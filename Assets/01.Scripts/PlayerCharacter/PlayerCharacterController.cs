@@ -19,7 +19,10 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
     private int gestureCount;
 
     [SerializeField]
-    private int maxPoint;
+    private int maxHp;
+
+    [SerializeField]
+    private int maxSp;
 
     [SerializeField]
     private float timerDuration;
@@ -37,14 +40,14 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
 
     private readonly Queue<GestureType> gesturesToMatch = new Queue<GestureType>();
 
-    public bool IsFullHp => hp >= maxPoint;
+    public bool IsFullHp => hp >= maxHp;
     public int GestureCount => gestureCount;
 
     public int Sp { get; private set; }
 
     private void Awake() {
-        hp = maxPoint;
-        Sp = maxPoint;
+        hp = maxHp;
+        Sp = maxSp;
     }
 
     public void ProcessGesture(GestureType gestureType) {
@@ -60,7 +63,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
             }
         }
 
-        if (gestureType >= GestureType.Lightning) {
+        if (gestureType >= GestureType.Circle) {
             if (usingSpecialSkill == false) {
                 SkillDrawn?.Invoke(gestureType);
             }
@@ -82,11 +85,15 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
     }
 
     public void Heal(int amount) {
-        hp = Mathf.Clamp(hp + amount, hp, maxPoint);
+        hp = Mathf.Clamp(hp + amount, hp, maxHp);
     }
 
-    public void ApplyProtection() {
+    public void ApplyProtection(int seconds = 0) {
         protectionApplied = true;
+
+        if (seconds != 0) {
+            DOVirtual.DelayedCall(seconds, () => protectionApplied = false);
+        }
     }
 
     public void AdjustMoveSpeed(float multiplier, float seconds) {
@@ -129,7 +136,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
 
     private void FailurePenalty() {
         if (Random.Range(0, 2) == 0) {
-            hp = 1;
+            hp = 50;
         }
         else {
             if (Sp == 0) {

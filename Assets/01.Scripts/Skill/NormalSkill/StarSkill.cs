@@ -1,5 +1,5 @@
 ﻿public class StarSkill : INormalSkill {
-    private const int SpCost = 3;
+    private const int SpCost = 2;
 
     public GestureType GestureType => GestureType.Star;
 
@@ -13,7 +13,7 @@
             throw new SkillCannotBeUsedException("There are no monsters on the field");
         }
 
-        // TODO: 필드 위 모든 몬스터 3초 기절
+        // TODO: 필드 위 랜덤 몬스터 4마리 3초 기절
         SpecialSkillLevel.UpdateLevel(3);
     }
 }

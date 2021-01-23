@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 309a90e5ce5f4679b56bc0f37a285dd7, type: 3}
-  m_Name: MonsterGestureSprite
+  m_Name: MonsterGestureResources
   m_EditorClassIdentifier: 
   monsterGestureResources: []
