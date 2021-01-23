@@ -22,7 +22,7 @@ public class MonsterGestureResources : ScriptableObject {
     public static MonsterGestureResources Instance {
         get {
             if (instance is null) {
-                var prefab = Resources.Load<MonsterGestureResources>("Unit/Resource/");
+                var prefab = Resources.Load<MonsterGestureResources>("Unit/Resource/MonsterGestureSprite");
                 if (prefab is null) {
                     string path = "Assets/Unit/Resource/MonsterGestureSprite";
 
