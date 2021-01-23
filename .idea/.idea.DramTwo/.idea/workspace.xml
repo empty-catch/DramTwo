@@ -76,8 +76,12 @@
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/NormalSkill/HeartSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/AppleCareSkill.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureDrawer.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureInfo.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/NormalSkill/StarSkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/NormalSkill/ClockSkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/NormalSkill/CircleSkill.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1iYHuZf5WJjRE53pTfqgSgm9kbH" />

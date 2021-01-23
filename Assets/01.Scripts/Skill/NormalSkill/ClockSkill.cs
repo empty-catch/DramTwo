@@ -1,5 +1,5 @@
 ﻿public class ClockSkill : INormalSkill {
-    private const int SpCost = 2;
+    private const int SpCost = 4;
     
     public GestureType GestureType => GestureType.Clock;
     
