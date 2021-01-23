@@ -45,14 +45,27 @@ public class GestureDrawer : MonoBehaviour {
     private Vector3 position;
     private Vector3 worldPosition;
     private int positionCount;
+    private bool canDraw = true;
 
     private IEnumerable<Gesture> Gestures => gestureInfos.Select(info => info.Gesture);
 
+    private void BlockDrawing(float seconds) {
+        canDraw = false;
+        DOVirtual.DelayedCall(seconds, () => canDraw = true);
+    }
+
     private void Awake() {
         camera = Camera.main;
+        PlayerCharacterController.Instance.SpecialSkillFailed += BlockDrawing;
     }
 
     private void Update() {
+        if (canDraw == false) {
+            tweener?.Kill();
+            FadeOut();
+            return;
+        }
+
         if (Input.GetMouseButtonDown(0)) {
             ResetDrawer();
             UpdatePositions();

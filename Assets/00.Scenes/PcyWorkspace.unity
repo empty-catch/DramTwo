@@ -290,10 +290,90 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 76880113629503440, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 76880113629503440, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 76880113629503440, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 76880113629503440, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 110794793046968809, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 110794793046968809, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 110794793046968809, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 110794793046968809, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531961823577088330, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531961823577088330, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531961823577088330, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531961823577088330, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1869596151449344008, guid: 88f38040cef401041859737baf573dcb, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2129512970}
+    - target: {fileID: 4005844192261741970, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005844192261741970, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005844192261741970, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005844192261741970, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135688656246955079, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135688656246955079, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135688656246955079, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135688656246955079, guid: 88f38040cef401041859737baf573dcb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6327282866067677488, guid: 88f38040cef401041859737baf573dcb, type: 3}
       propertyPath: m_RootOrder
       value: 3

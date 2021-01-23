@@ -4,10 +4,15 @@
     <e p="C:\Users\Tempus\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Tempus\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_DramTwo.-1228283573.00" t="ExcludeRecursive" />
     <e p="C:\Users\Tempus\Desktop\DramTwo" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="01.Scripts" t="Include">
+          <e p="Context" t="Include">
+            <e p="GestureContext.cs" t="Include" />
+            <e p="PlayerCharacterContext.cs" t="Include" />
+          </e>
           <e p="Monster" t="Include">
             <e p="BaseMonster.cs" t="Include" />
             <e p="MonsterGestureResources.cs" t="Include" />
@@ -24,6 +29,7 @@
           <e p="PlayerCharacter" t="Include">
             <e p="GestureDrawer.cs" t="Include" />
             <e p="GestureInfo.cs" t="Include" />
+            <e p="GestureResources.cs" t="Include" />
             <e p="GestureType.cs" t="Include" />
             <e p="PlayerCharacterController.cs" t="Include" />
           </e>
@@ -37,6 +43,7 @@
               <e p="ClockSkill.cs" t="Include" />
               <e p="HeartSkill.cs" t="Include" />
               <e p="LightningSkill.cs" t="Include" />
+              <e p="StarSkill.cs" t="Include" />
             </e>
             <e p="NotEnoughSpException.cs" t="Include" />
             <e p="SkillCannotBeUsedException.cs" t="Include" />
@@ -47,7 +54,7 @@
               <e p="AppleCareSkill.cs" t="Include" />
               <e p="SlaughterSkill.cs" t="Include" />
             </e>
-            <e p="StarSkill.cs" t="Include" />
+            <e p="SpecialSkillLevel.cs" t="Include" />
           </e>
           <e p="System" t="Include">
             <e p="Extensions.cs" t="Include" />
@@ -262,6 +269,378 @@
           <e p="Sparkle Effect" t="Include">
             <e p="Scripts" t="Include">
               <e p="TimeManager.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Slash.Unity.DataBind" t="Include">
+          <e p="Editor" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Editors" t="Include">
+                <e p="ContextHolderEditor.cs" t="Include" />
+                <e p="DataProviderEditor.cs" t="Include" />
+                <e p="InvokeEventPopup.cs" t="Include" />
+              </e>
+              <e p="PropertyDrawers" t="Include">
+                <e p="ContextTypeDrawer.cs" t="Include" />
+                <e p="DataBindingPropertyDrawer.cs" t="Include" />
+                <e p="PathPropertyDrawer.cs" t="Include" />
+                <e p="TypeSelectionDrawer.cs" t="Include" />
+              </e>
+              <e p="Utils" t="Include">
+                <e p="ContextTypeCache.cs" t="Include" />
+                <e p="ContextTypeEditorUtils.cs" t="Include" />
+                <e p="InspectorUtils.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Examples" t="Include">
+            <e p="ActiveGroup" t="Include">
+              <e p="TestEnumGroupActiveSetter.cs" t="Include" />
+            </e>
+            <e p="ActiveSetter" t="Include">
+              <e p="ActiveSetterExample.cs" t="Include" />
+              <e p="ActiveSetterExampleContext.cs" t="Include" />
+            </e>
+            <e p="Aggregations" t="Include">
+              <e p="AggregationsExample.cs" t="Include" />
+              <e p="AggregationsExampleContext.cs" t="Include" />
+              <e p="AggregationsExampleTextContext.cs" t="Include" />
+            </e>
+            <e p="Collection" t="Include">
+              <e p="CollectionExampleContext.cs" t="Include" />
+              <e p="CollectionExampleItemContext.cs" t="Include" />
+            </e>
+            <e p="ContextProperty" t="Include">
+              <e p="ContextPropertyContext.cs.cs" t="Include" />
+              <e p="ContextPropertyItemContext.cs.cs" t="Include" />
+            </e>
+            <e p="Dropdown" t="Include">
+              <e p="DropdownContext.cs" t="Include" />
+              <e p="DropdownItemContext.cs" t="Include" />
+              <e p="DropdownItemToOptionDataConverter.cs" t="Include" />
+            </e>
+            <e p="EnumEqualityCheck" t="Include">
+              <e p="DropDownUnity.cs" t="Include" />
+              <e p="EnumEqualityCheckContext.cs" t="Include" />
+              <e p="TestEnum.cs" t="Include" />
+            </e>
+            <e p="FunWithBooleans" t="Include">
+              <e p="FunWithBooleansContext.cs" t="Include" />
+            </e>
+            <e p="InputFieldGetter" t="Include">
+              <e p="InputFieldGetterContext.cs" t="Include" />
+              <e p="MessageContext.cs" t="Include" />
+            </e>
+            <e p="LabelSetter" t="Include">
+              <e p="LabelSetterContext.cs" t="Include" />
+            </e>
+            <e p="MasterPath" t="Include">
+              <e p="MasterPathExampleContext.cs" t="Include" />
+            </e>
+            <e p="Notifications" t="Include">
+              <e p="NotificationAnimationEvents.cs" t="Include" />
+              <e p="NotificationContext.cs" t="Include" />
+              <e p="NotificationsContext.cs" t="Include" />
+              <e p="NotificationsExample.cs" t="Include" />
+              <e p="TimerExpiredProvider.cs" t="Include" />
+            </e>
+            <e p="NotifyPropertyChanged" t="Include">
+              <e p="NotifyPropertyChangedExample.cs" t="Include" />
+              <e p="NotifyPropertyChangedExampleData.cs" t="Include" />
+              <e p="NotifyPropertyChangedExampleDataMethods.cs" t="Include" />
+            </e>
+            <e p="ScriptableObjectDataProvider" t="Include">
+              <e p="TestScriptableObject.cs" t="Include" />
+              <e p="TestScriptableObjectDataProvider.cs" t="Include" />
+            </e>
+            <e p="SpriteLoading" t="Include">
+              <e p="SpriteLoadingContext.cs" t="Include" />
+              <e p="SpriteLoadingExample.cs" t="Include" />
+            </e>
+            <e p="StringToUpperFormatter" t="Include">
+              <e p="StringToUpperFormatter.cs" t="Include" />
+            </e>
+            <e p="TwoWayBinding" t="Include">
+              <e p="CharacterContext.cs" t="Include" />
+              <e p="CharacterEditorContext.cs" t="Include" />
+              <e p="CharacterSelectionContext.cs" t="Include" />
+              <e p="TwoWayBindingExample.cs" t="Include" />
+            </e>
+          </e>
+          <e p="readme.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="Core" t="Include">
+              <e p="Data" t="Include">
+                <e p="BranchDataNode.cs" t="Include" />
+                <e p="Collection.cs" t="Include" />
+                <e p="Context.cs" t="Include" />
+                <e p="DataDictionary.cs" t="Include" />
+                <e p="DataNode.cs" t="Include" />
+                <e p="DataProviderNodeValueObserver.cs" t="Include" />
+                <e p="DataTree.cs" t="Include" />
+                <e p="DataTrigger.cs" t="Include" />
+                <e p="IDataContext.cs" t="Include" />
+                <e p="IDataNode.cs" t="Include" />
+                <e p="IDataProvider.cs" t="Include" />
+                <e p="INodeValueObserver.cs" t="Include" />
+                <e p="LeafDataNode.cs" t="Include" />
+                <e p="NotifyPropertyChangedDataContext.cs" t="Include" />
+                <e p="NotifyPropertyChangedNodeValueObserver.cs" t="Include" />
+                <e p="Property.cs" t="Include" />
+              </e>
+              <e p="Presentation" t="Include">
+                <e p="CollectionDataBinding.cs" t="Include" />
+                <e p="ContextHolder.cs" t="Include" />
+                <e p="DataBinding.cs" t="Include" />
+                <e p="DataBindingOperator.cs" t="Include" />
+                <e p="DataBindingType.cs" t="Include" />
+                <e p="DataBindRunner.cs" t="Include" />
+                <e p="DataContextNodeConnector.cs" t="Include" />
+                <e p="DataContextNodeConnectorInitializer.cs" t="Include" />
+                <e p="DataProvider.cs" t="Include" />
+                <e p="DataTypeHintAttribute.cs" t="Include" />
+                <e p="DataTypeHintExplicitAttribute.cs" t="Include" />
+                <e p="DataTypeHintGenericTypeAttribute.cs" t="Include" />
+                <e p="IContextOperator.cs" t="Include" />
+                <e p="MasterPath.cs" t="Include" />
+              </e>
+              <e p="Utils" t="Include">
+                <e p="AssemblyUtils.cs" t="Include" />
+                <e p="CollectionUtils.cs" t="Include" />
+                <e p="ComparisonUtils.cs" t="Include" />
+                <e p="ContextMemberFilter.cs" t="Include" />
+                <e p="ContextPathAttribute.cs" t="Include" />
+                <e p="ContextTypeAttribute.cs" t="Include" />
+                <e p="DataBindingSettingsProvider.cs" t="Include" />
+                <e p="DataBindSettings.cs" t="Include" />
+                <e p="DataBindSettingsExtensions.cs" t="Include" />
+                <e p="EnumExtensions.cs" t="Include" />
+                <e p="IDataBindSettings.cs" t="Include" />
+                <e p="ReflectionUtils.cs" t="Include" />
+                <e p="SystemExtensions.cs" t="Include" />
+                <e p="TypeInfoUtils.cs" t="Include" />
+                <e p="TypeSelectionAttribute.cs" t="Include" />
+                <e p="UnityUtils.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Foundation" t="Include">
+              <e p="Commands" t="Include">
+                <e p="Command.cs" t="Include" />
+                <e p="CommandProxy.cs" t="Include" />
+              </e>
+              <e p="Diagnostics" t="Include">
+                <e p="ContextHolderInitializer.cs" t="Include" />
+              </e>
+              <e p="Filters" t="Include">
+                <e p="CollectionAggregation.cs" t="Include" />
+                <e p="CollectionAnyFilter.cs" t="Include" />
+              </e>
+              <e p="Observers" t="Include">
+                <e p="ComponentDataObserver.cs" t="Include" />
+              </e>
+              <e p="Providers" t="Include">
+                <e p="Checks" t="Include">
+                  <e p="ComparisonCheckProvider.cs" t="Include" />
+                  <e p="EqualityCheck.cs" t="Include" />
+                  <e p="IsSetCheck.cs" t="Include" />
+                </e>
+                <e p="Converters" t="Include">
+                  <e p="BaseColorAlphaToColorConverter.cs" t="Include" />
+                  <e p="CollectionItemsConverter.cs" t="Include" />
+                  <e p="DataConverter.cs" t="Include" />
+                  <e p="EulerAnglesToQuaternionConverter.cs" t="Include" />
+                  <e p="QuaternionToEulerAnglesConverter.cs" t="Include" />
+                  <e p="Texture2DToSpriteConverter.cs" t="Include" />
+                  <e p="ValueConverter.cs" t="Include" />
+                  <e p="ValuesToColorConverter.cs" t="Include" />
+                  <e p="ValuesToVector3Converter.cs" t="Include" />
+                  <e p="Vector2ToVector3Converter.cs" t="Include" />
+                  <e p="Vector3ToValueConverter.cs" t="Include" />
+                </e>
+                <e p="Formatters" t="Include">
+                  <e p="ConditionalFormatter.cs" t="Include" />
+                  <e p="CurrencyStringFormatter.cs" t="Include" />
+                  <e p="DurationFormatter.cs" t="Include" />
+                  <e p="FallbackValueFormatter.cs" t="Include" />
+                  <e p="Formatter.cs" t="Include" />
+                  <e p="MaterialMainTextureFormatter.cs" t="Include" />
+                  <e p="MaterialTextureFormatter.cs" t="Include" />
+                  <e p="PrependSignFormatter.cs" t="Include" />
+                  <e p="SmoothCollectionChangesFormatter.cs" t="Include" />
+                  <e p="StringFormatter.cs" t="Include" />
+                  <e p="StringToLowerFormatter.cs" t="Include" />
+                  <e p="StringToUpperFormatter.cs" t="Include" />
+                </e>
+                <e p="Getters" t="Include">
+                  <e p="ComponentDataProvider.cs" t="Include" />
+                  <e p="ComponentGameObjectProvider.cs" t="Include" />
+                  <e p="ComponentPullDataProvider.cs" t="Include" />
+                  <e p="ComponentSingleGetter.cs" t="Include" />
+                  <e p="ComponentTransformProvider.cs" t="Include" />
+                  <e p="ContextDataProvider.cs" t="Include" />
+                  <e p="ContextGetter.cs" t="Include" />
+                  <e p="EnumGetter.cs" t="Include" />
+                  <e p="FindGameObjectWithTagGetter.cs" t="Include" />
+                  <e p="GameObjectComponentProvider.cs" t="Include" />
+                  <e p="GameObjectSkyboxProvider.cs" t="Include" />
+                  <e p="GameObjectTransformProvider.cs" t="Include" />
+                  <e p="MainCameraProvider.cs" t="Include" />
+                  <e p="MeshFilterSharedMeshProvider.cs" t="Include" />
+                  <e p="RectTransformDimensionsChangeListener.cs" t="Include" />
+                  <e p="RectTransformWidthProvider.cs" t="Include" />
+                  <e p="TransformLocalPositionProvider.cs" t="Include" />
+                  <e p="TransformLocalRotationProvider.cs" t="Include" />
+                  <e p="TransformPositionProvider.cs" t="Include" />
+                  <e p="TransformRotationProvider.cs" t="Include" />
+                </e>
+                <e p="Loaders" t="Include">
+                  <e p="SpriteLoader.cs" t="Include" />
+                  <e p="TextAssetLoader.cs" t="Include" />
+                </e>
+                <e p="Lookups" t="Include">
+                  <e p="CollectionLookup.cs" t="Include" />
+                  <e p="CollectionRangeLookup.cs" t="Include" />
+                  <e p="CollectionWhereBehaviour.cs" t="Include" />
+                  <e p="DictionaryLookup.cs" t="Include" />
+                </e>
+                <e p="Objects" t="Include">
+                  <e p="BooleanObject.cs" t="Include" />
+                  <e p="ColorObject.cs" t="Include" />
+                  <e p="ConstantObjectProvider.cs" t="Include" />
+                  <e p="NumberObject.cs" t="Include" />
+                  <e p="StringObject.cs" t="Include" />
+                </e>
+                <e p="Operations" t="Include">
+                  <e p="ArithmeticOperation.cs" t="Include" />
+                  <e p="GameObjectMapping.cs" t="Include" />
+                  <e p="InvertBoolOperation.cs" t="Include" />
+                  <e p="InvertNumberOperation.cs" t="Include" />
+                  <e p="InvertOperation.cs" t="Include" />
+                  <e p="InvertVector3Operation.cs" t="Include" />
+                  <e p="LogicalBoolOperation.cs" t="Include" />
+                  <e p="RoundToNearestOperation.cs" t="Include" />
+                  <e p="TweenOperation.cs" t="Include" />
+                </e>
+                <e p="Smootheners" t="Include">
+                  <e p="FloatSmoothener.cs" t="Include" />
+                  <e p="LongSmoothener.cs" t="Include" />
+                  <e p="Smoothener.cs" t="Include" />
+                </e>
+                <e p="Switches" t="Include">
+                  <e p="BooleanSwitch.cs" t="Include" />
+                  <e p="NumberRangeSwitch.cs" t="Include" />
+                  <e p="NumberSwitch.cs" t="Include" />
+                  <e p="RangeSwitch.cs" t="Include" />
+                  <e p="SwitchOption.cs" t="Include" />
+                </e>
+                <e p="VR" t="Include">
+                  <e p="InputTrackingLocalPositionProvider.cs" t="Include" />
+                  <e p="InputTrackingPositionProvider.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Setters" t="Include">
+                <e p="ActiveSetter.cs" t="Include" />
+                <e p="AnimatorBooleanSetter.cs" t="Include" />
+                <e p="AnimatorParameterSetter.cs" t="Include" />
+                <e p="AnimatorSpeedSetter.cs" t="Include" />
+                <e p="AnimatorTriggerSetter.cs" t="Include" />
+                <e p="BehaviourEnabledSetter.cs" t="Include" />
+                <e p="ComponentSingleSetter.cs" t="Include" />
+                <e p="ContextDataUpdater.cs" t="Include" />
+                <e p="ContextHolderContextSetter.cs" t="Include" />
+                <e p="EnumGroupActiveSetter.cs" t="Include" />
+                <e p="GameObjectActiveSwitch.cs" t="Include" />
+                <e p="GameObjectItemSetter.cs" t="Include" />
+                <e p="GameObjectItemsSetter.cs" t="Include" />
+                <e p="GameObjectsActiveSetter.cs" t="Include" />
+                <e p="GameObjectSingleSetter.cs" t="Include" />
+                <e p="GroupActiveSetter.cs" t="Include" />
+                <e p="ItemSetter.cs" t="Include" />
+                <e p="ItemsSetter.cs" t="Include" />
+                <e p="LocalPositionSetter.cs" t="Include" />
+                <e p="MaterialFloatPropertySetter.cs" t="Include" />
+                <e p="MeshFilterMeshSetter.cs" t="Include" />
+                <e p="MeshRendererMaterialSetter.cs" t="Include" />
+                <e p="PositionSetter.cs" t="Include" />
+                <e p="PrefabInstantiator.cs" t="Include" />
+                <e p="Setter.cs" t="Include" />
+                <e p="SingleSetter.cs" t="Include" />
+                <e p="SkyboxMaterialSetter.cs" t="Include" />
+                <e p="SlotItemsSetter.cs" t="Include" />
+                <e p="SmoothSlotItemsSetter.cs" t="Include" />
+                <e p="SpriteRendererSpriteSetter.cs" t="Include" />
+                <e p="TransformLocalPositionSetter.cs" t="Include" />
+                <e p="TransformLocalRotationSetter.cs" t="Include" />
+                <e p="TransformPositionSetter.cs" t="Include" />
+                <e p="TransformRotationSetter.cs" t="Include" />
+              </e>
+              <e p="Synchronizers" t="Include">
+                <e p="ComponentDataSynchronizer.cs" t="Include" />
+              </e>
+              <e p="Triggers" t="Include">
+                <e p="CollectionUnityEvents.cs" t="Include" />
+                <e p="UnityEventTrigger.cs" t="Include" />
+              </e>
+              <e p="Utils" t="Include">
+                <e p="CollectionObserver.cs" t="Include" />
+              </e>
+            </e>
+            <e p="UI" t="Include">
+              <e p="Unity" t="Include">
+                <e p="Commands" t="Include">
+                  <e p="BeginDragCommand.cs" t="Include" />
+                  <e p="ButtonClickCommand.cs" t="Include" />
+                  <e p="DragCommand.cs" t="Include" />
+                  <e p="DropCommand.cs" t="Include" />
+                  <e p="EndDragCommand.cs" t="Include" />
+                  <e p="EventTriggerCommand.cs" t="Include" />
+                  <e p="UnityEventCommand.cs" t="Include" />
+                </e>
+                <e p="Getters" t="Include">
+                  <e p="InputFieldGetter.cs" t="Include" />
+                  <e p="InputFieldTextProvider.cs" t="Include" />
+                  <e p="SliderValueGetter.cs" t="Include" />
+                  <e p="SliderValueProvider.cs" t="Include" />
+                  <e p="ToggleIsOnGetter.cs" t="Include" />
+                  <e p="ToggleIsOnProvider.cs" t="Include" />
+                </e>
+                <e p="Observers" t="Include">
+                  <e p="InputFieldTextObserver.cs" t="Include" />
+                  <e p="SliderValueObserver.cs" t="Include" />
+                </e>
+                <e p="Providers" t="Include">
+                  <e p="MaterialInstanceFormatter.cs" t="Include" />
+                  <e p="PointsAtColliderProvider.cs" t="Include" />
+                  <e p="ScrollRectNormalizedPositionProvider.cs" t="Include" />
+                  <e p="ScrollRectVerticalNormalizedPositionProvider.cs" t="Include" />
+                  <e p="SelectableInteractableProvider.cs" t="Include" />
+                  <e p="TextureAspectRatioProvider.cs" t="Include" />
+                </e>
+                <e p="Setters" t="Include">
+                  <e p="AspectRatioFitterAspectRatioSetter.cs" t="Include" />
+                  <e p="CanvasGroupAlphaSetter.cs" t="Include" />
+                  <e p="CanvasGroupInteractableSetter.cs" t="Include" />
+                  <e p="CanvasSortingOrderSetter.cs" t="Include" />
+                  <e p="DropdownOptionsSetter.cs" t="Include" />
+                  <e p="GraphicColorSetter.cs" t="Include" />
+                  <e p="ImageFillAmountSetter.cs" t="Include" />
+                  <e p="ImageFillAmountSmoothSetter.cs" t="Include" />
+                  <e p="ImageMaterialSetter.cs" t="Include" />
+                  <e p="ImageSpriteSetter.cs" t="Include" />
+                  <e p="InputFieldTextSetter.cs" t="Include" />
+                  <e p="LayoutGroupItemsSetter.cs" t="Include" />
+                  <e p="RawImageTextureSetter.cs" t="Include" />
+                  <e p="SelectableInteractableSetter.cs" t="Include" />
+                  <e p="SliderValueSetter.cs" t="Include" />
+                  <e p="SmoothLayoutGroupItemsSetter.cs" t="Include" />
+                  <e p="TextTextSetter.cs" t="Include" />
+                  <e p="ToggleIsOnSetter.cs" t="Include" />
+                </e>
+                <e p="Synchronizers" t="Include">
+                  <e p="InputFieldTextSynchronizer.cs" t="Include" />
+                  <e p="SliderValueSynchronizer.cs" t="Include" />
+                </e>
+              </e>
             </e>
           </e>
         </e>

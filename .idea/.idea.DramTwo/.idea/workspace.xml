@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2943b2b7-dc5c-4db4-aefd-621120e43961" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DramTwo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/Context/PlayerCharacterContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/Context/PlayerCharacterContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03.Prefabs/Player Character/Player Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03.Prefabs/Player Character/Player Character.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +41,6 @@
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/Skill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/NotEnoughSpException.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillCannotBeUsedException.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureCounter.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/ISkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/INormalSkill.cs" />
@@ -51,9 +52,30 @@
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/Adrenaline.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/AdrenalineSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/SlaughterSkill.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/AppleCareSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/AntiBossSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/Interfaces/ISpecialSkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/ArrayToValueProvider.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/BoolArrayProvider.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/PlayerGestureContext.cs" />
+      <option value="$PROJECT_DIR$/Assets/Slash.Unity.DataBind/Scripts/Core/Data/Property.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/PlayerCharacterGestureContext.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/GameObjectsActiveSetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/IndexSetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/ActiveIndexSetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/ImageSpriteIndexSetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Slash.Unity.DataBind/Scripts/Core/Data/Collection.cs" />
+      <option value="$PROJECT_DIR$/Assets/Slash.Unity.DataBind/Scripts/Foundation/Setters/ItemSetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/ImageSpriteCollectionSetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/AdrenalineSkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/AppleCareSkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/NormalSkill/HeartSkill.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureDrawer.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureResources.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/ActiveCollectionSetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/GestureContext.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/PlayerCharacterContext.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkillLevel.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SkillHandler.cs" />
     </changedPaths>
   </component>
@@ -66,10 +88,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="RiderCSharpFileTemplatesSettingsId" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -107,6 +130,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

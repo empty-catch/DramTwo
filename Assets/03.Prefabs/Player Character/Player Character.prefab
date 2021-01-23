@@ -1,49 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1635232148
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1635232149}
-  - component: {fileID: 1635232150}
-  m_Layer: 0
-  m_Name: Skill Handler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1635232149
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1635232148}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 6327282866067677488}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1635232150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1635232148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 414c457839fc4940845a7836ee2d5af0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  specialSkillCooldown: 30000
 --- !u!1 &171898607782395714
 GameObject:
   m_ObjectHideFlags: 0
@@ -55,6 +11,8 @@ GameObject:
   - component: {fileID: 1531961823577088330}
   - component: {fileID: 8689172257380331166}
   - component: {fileID: 31263832573881596}
+  - component: {fileID: 6585401147300637861}
+  - component: {fileID: 8806334597081250356}
   m_Layer: 5
   m_Name: Gesture_01
   m_TagString: Untagged
@@ -103,7 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -119,6 +77,57 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6585401147300637861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171898607782395714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae8eb38144f02dd43a55dde5d4aa9bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: Gesture1.Active
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 171898607782395714}
+    Type: 3
+  constantTarget: {fileID: 0}
+  DontDisableOnInactive: 1
+--- !u!114 &8806334597081250356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171898607782395714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef3543789a5afb45a92d7e0e592f9b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: Gesture1.Sprite
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 31263832573881596}
+    Type: 3
+  constantTarget: {fileID: 0}
 --- !u!1 &2119160062251971553
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,6 +139,8 @@ GameObject:
   - component: {fileID: 4005844192261741970}
   - component: {fileID: 8270801814340033007}
   - component: {fileID: 8973622386923080202}
+  - component: {fileID: 4615728629796157036}
+  - component: {fileID: 8843675800570788219}
   m_Layer: 5
   m_Name: Gesture_00
   m_TagString: Untagged
@@ -178,7 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -194,6 +205,57 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4615728629796157036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119160062251971553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae8eb38144f02dd43a55dde5d4aa9bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: Gesture0.Active
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 2119160062251971553}
+    Type: 3
+  constantTarget: {fileID: 0}
+  DontDisableOnInactive: 1
+--- !u!114 &8843675800570788219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119160062251971553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef3543789a5afb45a92d7e0e592f9b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: Gesture0.Sprite
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 8973622386923080202}
+    Type: 3
+  constantTarget: {fileID: 0}
 --- !u!1 &2656418042706365496
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,6 +267,8 @@ GameObject:
   - component: {fileID: 110794793046968809}
   - component: {fileID: 3883322192558562365}
   - component: {fileID: 6225896285949153483}
+  - component: {fileID: 253918862550623693}
+  - component: {fileID: 9075847007939949652}
   m_Layer: 5
   m_Name: Gesture_02
   m_TagString: Untagged
@@ -253,7 +317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -269,6 +333,158 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &253918862550623693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2656418042706365496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae8eb38144f02dd43a55dde5d4aa9bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: Gesture2.Active
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 2656418042706365496}
+    Type: 3
+  constantTarget: {fileID: 0}
+  DontDisableOnInactive: 1
+--- !u!114 &9075847007939949652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2656418042706365496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef3543789a5afb45a92d7e0e592f9b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: Gesture2.Sprite
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 6225896285949153483}
+    Type: 3
+  constantTarget: {fileID: 0}
+--- !u!1 &2849181761890382241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1450612506770481817}
+  - component: {fileID: 9126208102899546879}
+  - component: {fileID: 2271394656904986220}
+  - component: {fileID: 4907842091691326236}
+  m_Layer: 5
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1450612506770481817
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2849181761890382241}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7107265076719552265}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 75}
+  m_SizeDelta: {x: 540, y: 10}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &9126208102899546879
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2849181761890382241}
+  m_CullTransparentMesh: 1
+--- !u!114 &2271394656904986220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2849181761890382241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7482667652216324306, guid: 70881c7d046818547920cd1aa5325edf, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4907842091691326236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2849181761890382241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 834fe4df156a8204a8a06bf6f5b55f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: TimerFill
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 2271394656904986220}
+    Type: 3
+  constantTarget: {fileID: 0}
 --- !u!1 &3137773963248740413
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,8 +497,10 @@ GameObject:
   - component: {fileID: 1869596151449344008}
   - component: {fileID: 2475867740110751514}
   - component: {fileID: 54607993565305510}
+  - component: {fileID: 7078268862239007640}
+  - component: {fileID: 6327282865253927175}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Skill Handler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -300,8 +518,9 @@ RectTransform:
   m_LocalScale: {x: 0.009259259, y: 0.009259259, z: 0.009259259}
   m_Children:
   - {fileID: 5454511929639282136}
+  - {fileID: 1450612506770481817}
   m_Father: {fileID: 6327282866067677488}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -369,6 +588,34 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7078268862239007640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3137773963248740413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0353de6b5a9e8fa4eaded0354856aa9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextType: PlayerCharacterContext, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  createContext: 1
+--- !u!114 &6327282865253927175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3137773963248740413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414c457839fc4940845a7836ee2d5af0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specialSkillCooldown: 30000
 --- !u!1 &6327282866067677489
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +644,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1635232149}
   - {fileID: 7107265076719552265}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -414,39 +660,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c498c393ec421470c82d2c4c2ba6289e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDead:
-    m_PersistentCalls:
-      m_Calls: []
-  gestureDrawn:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1635232150}
-        m_TargetAssemblyTypeName: SkillHandler, Assembly-CSharp
-        m_MethodName: ActivateSpecialSkill
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  skillDrawn:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1635232150}
-        m_TargetAssemblyTypeName: SkillHandler, Assembly-CSharp
-        m_MethodName: Activate
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  gestureCount: 5
+  maxPoint: 6
+  timerDuration: 6
+  moveSpeed: 5
 --- !u!1 &6775922953177803932
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,6 +675,8 @@ GameObject:
   - component: {fileID: 76880113629503440}
   - component: {fileID: 5650917923661030004}
   - component: {fileID: 7979672646077234406}
+  - component: {fileID: 2591495515262314830}
+  - component: {fileID: 4232633023694715288}
   m_Layer: 5
   m_Name: Gesture_03
   m_TagString: Untagged
@@ -506,7 +725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -522,6 +741,57 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2591495515262314830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6775922953177803932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae8eb38144f02dd43a55dde5d4aa9bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: Gesture3.Active
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 6775922953177803932}
+    Type: 3
+  constantTarget: {fileID: 0}
+  DontDisableOnInactive: 1
+--- !u!114 &4232633023694715288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6775922953177803932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef3543789a5afb45a92d7e0e592f9b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: Gesture3.Sprite
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 7979672646077234406}
+    Type: 3
+  constantTarget: {fileID: 0}
 --- !u!1 &8557386119676302858
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +870,8 @@ GameObject:
   - component: {fileID: 6135688656246955079}
   - component: {fileID: 2794534277944953817}
   - component: {fileID: 4759455962349542297}
+  - component: {fileID: 6066678014136703059}
+  - component: {fileID: 1084657056153121880}
   m_Layer: 5
   m_Name: Gesture_04
   m_TagString: Untagged
@@ -648,7 +920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -664,3 +936,54 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6066678014136703059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9149625395055557947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae8eb38144f02dd43a55dde5d4aa9bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: Gesture4.Active
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 9149625395055557947}
+    Type: 3
+  constantTarget: {fileID: 0}
+  DontDisableOnInactive: 1
+--- !u!114 &1084657056153121880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9149625395055557947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef3543789a5afb45a92d7e0e592f9b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Constant: 
+    Path: Gesture4.Sprite
+    Provider: {fileID: 0}
+    Reference: {fileID: 0}
+    Type: 0
+  TargetBinding:
+    Constant: 
+    Path: 
+    Provider: {fileID: 0}
+    Reference: {fileID: 4759455962349542297}
+    Type: 3
+  constantTarget: {fileID: 0}

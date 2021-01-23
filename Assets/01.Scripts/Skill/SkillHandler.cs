@@ -11,8 +11,7 @@ public class SkillHandler : MonoBehaviour {
     private readonly Dictionary<GestureType, ISkill> skills = new Dictionary<GestureType, ISkill>();
     private readonly Dictionary<int, ISkill> specialSkills = new Dictionary<int, ISkill>();
 
-    private int specialSkillLevel;
-    private int gestureCount;
+    private int gestureUsageCount;
     private bool canActivateSpecialSkill = true;
 
     public void Activate(GestureType gestureType) {
@@ -22,18 +21,19 @@ public class SkillHandler : MonoBehaviour {
     }
 
     public void ActivateSpecialSkill() {
-        if (canActivateSpecialSkill == false || gestureCount < 100) {
-            gestureCount++;
+        if (canActivateSpecialSkill == false || gestureUsageCount < 1) {
+            gestureUsageCount++;
             return;
         }
 
-        gestureCount = 0;
+        gestureUsageCount = 0;
         CooldownCoroutine().Start();
-        PlayerCharacterController.Instance.ApplyGracePeriodCoroutine(2).Start();
+        PlayerCharacterController.Instance.ApplyGracePeriod(2);
+        PlayerCharacterController.Instance.Foo();
     }
 
     private void ApplySpecialSkill() {
-        for (var i = 0; i < specialSkillLevel; i++) {
+        for (var i = 0; i < SpecialSkillLevel.Value + 1; i++) {
             if (specialSkills.TryGetValue(i, out var skill)) {
                 skill.Activate();
             }
@@ -47,6 +47,10 @@ public class SkillHandler : MonoBehaviour {
     }
 
     private void Awake() {
+        PlayerCharacterController.Instance.SpecialSkillApplied += ApplySpecialSkill;
+        PlayerCharacterController.Instance.SkillDrawn += Activate;
+        PlayerCharacterController.Instance.GestureDrawn += _ => ActivateSpecialSkill();
+
         AddNormalSkill(new LightningSkill());
         AddNormalSkill(new HeartSkill());
         AddNormalSkill(new ClockSkill());

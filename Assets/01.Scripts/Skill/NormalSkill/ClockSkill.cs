@@ -9,5 +9,6 @@
         }
         
         // TODO: 플레이어 제외 시간 50% 느려짐. (BGM도 느려짐)
+        SpecialSkillLevel.UpdateLevel(3);
     }
 }
