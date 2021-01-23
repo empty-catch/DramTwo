@@ -12,4 +12,8 @@ public class MonsterHpItemContext : Context {
     public void SettingGesture(GestureType key) {
         HpGesture = MonsterGestureResources.Instance.GestureItems[key];
     }
+
+    public void ResetItem() {
+        HpGesture = null;
+    }
 }

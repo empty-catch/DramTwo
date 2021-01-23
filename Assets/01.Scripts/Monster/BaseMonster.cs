@@ -6,7 +6,7 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
-public abstract class BaseMonster : MonoBehaviour {
+public class BaseMonster : MonoBehaviour {
     private MonsterHpItemContext[] hpItems;
         
     [Header("Values")]
@@ -122,5 +122,9 @@ public abstract class BaseMonster : MonoBehaviour {
     public virtual void ResetObject() {
         speed = defaultSpeed;
         hp = defaultHp;
+
+        for (int i = 0; i < hpItems.Length; i++) {
+            hpItems[i].ResetItem();
+        }
     }
 }
