@@ -68,7 +68,6 @@
       <option value="$PROJECT_DIR$/Assets/Slash.Unity.DataBind/Scripts/Foundation/Setters/ItemSetter.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/ImageSpriteCollectionSetter.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/AdrenalineSkill.cs" />
-      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureResources.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/ActiveCollectionSetter.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Context/GestureContext.cs" />
@@ -78,6 +77,7 @@
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/NormalSkill/HeartSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/Skill/SpecialSkill/AppleCareSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/PlayerCharacterController.cs" />
+      <option value="$PROJECT_DIR$/Assets/01.Scripts/PlayerCharacter/GestureDrawer.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1iYHuZf5WJjRE53pTfqgSgm9kbH" />
