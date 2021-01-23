@@ -661,7 +661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gestureCount: 5
-  maxHp: 2
+  maxHp: 100
   maxSp: 1
   timerDuration: 6
   moveSpeed: 5

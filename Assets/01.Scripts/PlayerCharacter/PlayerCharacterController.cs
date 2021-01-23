@@ -132,7 +132,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
 
     private void FailurePenalty() {
         if (Random.Range(0, 2) == 0) {
-            hp = 1;
+            hp = 50;
         }
         else {
             if (Sp == 0) {
