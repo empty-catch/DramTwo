@@ -15,7 +15,7 @@ public class MonsterGestureResource {
     public Sprite GestureSprite => gestureSprite;
 }
 
-[CreateAssetMenu(fileName = "MonsterGestureSprite", menuName = "Resources/MonsterGestureSprite",order = 0)]
+[CreateAssetMenu(fileName = "MonsterGestureResources", menuName = "Resources/MonsterGestureResources",order = 0)]
 public class MonsterGestureResources : ScriptableObject {
     private static MonsterGestureResources instance;
 
@@ -23,7 +23,7 @@ public class MonsterGestureResources : ScriptableObject {
         get {
             if (instance is null) {
                 var prefab = Resources.Load<MonsterGestureResources>("Unit/Resource/");
-                if (prefab is null ) {
+                if (prefab is null) {
                     string path = "Assets/Unit/Resource/MonsterGestureSprite";
 
                     var folderInfo = new DirectoryInfo(path);
