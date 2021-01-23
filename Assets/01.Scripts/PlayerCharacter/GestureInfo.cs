@@ -14,9 +14,13 @@ public class GestureInfo : ScriptableObject {
     [SerializeField]
     private Color color = Color.white;
 
+    [SerializeField]
+    private bool isUnlocked;
+
     public Gesture Gesture { get; private set; }
     public GestureType Type => type;
     public Color Color => color;
+    public bool IsUnlocked => isUnlocked;
 
     private void OnEnable() {
         Gesture = GestureIO.ReadGestureFromXML(xml.text);

@@ -15,3 +15,4 @@ MonoBehaviour:
   xml: {fileID: 4900000, guid: e411fb119fc89d94291fb26e5f59b167, type: 3}
   type: 4
   color: {r: 1, g: 1, b: 1, a: 1}
+  isUnlocked: 1
