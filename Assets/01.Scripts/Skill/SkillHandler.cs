@@ -11,7 +11,6 @@ public class SkillHandler : MonoBehaviour {
     private readonly Dictionary<GestureType, ISkill> skills = new Dictionary<GestureType, ISkill>();
     private readonly Dictionary<int, ISkill> specialSkills = new Dictionary<int, ISkill>();
 
-    private int specialSkillLevel;
     private int gestureUsageCount;
     private bool canActivateSpecialSkill = true;
 
@@ -34,7 +33,7 @@ public class SkillHandler : MonoBehaviour {
     }
 
     private void ApplySpecialSkill() {
-        for (var i = 0; i < specialSkillLevel + 1; i++) {
+        for (var i = 0; i < SpecialSkillLevel.Value + 1; i++) {
             if (specialSkills.TryGetValue(i, out var skill)) {
                 skill.Activate();
             }

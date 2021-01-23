@@ -43,6 +43,7 @@
               <e p="ClockSkill.cs" t="Include" />
               <e p="HeartSkill.cs" t="Include" />
               <e p="LightningSkill.cs" t="Include" />
+              <e p="StarSkill.cs" t="Include" />
             </e>
             <e p="NotEnoughSpException.cs" t="Include" />
             <e p="SkillCannotBeUsedException.cs" t="Include" />
@@ -53,7 +54,7 @@
               <e p="AppleCareSkill.cs" t="Include" />
               <e p="SlaughterSkill.cs" t="Include" />
             </e>
-            <e p="StarSkill.cs" t="Include" />
+            <e p="SpecialSkillLevel.cs" t="Include" />
           </e>
           <e p="System" t="Include">
             <e p="Extensions.cs" t="Include" />
