@@ -6,7 +6,7 @@
     public static int Value { get; private set; }
 
     public static void UpdateLevel(int targetLevel) {
-        if (targetLevel != Value) {
+        if (targetLevel != Value + 1) {
             return;
         }
 
