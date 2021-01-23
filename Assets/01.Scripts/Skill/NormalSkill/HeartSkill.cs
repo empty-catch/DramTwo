@@ -13,5 +13,6 @@
         }
 
         PlayerCharacterController.Instance.Heal(1);
+        SpecialSkillLevel.UpdateLevel(2);
     }
 }

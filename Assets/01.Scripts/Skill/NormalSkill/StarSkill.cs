@@ -14,5 +14,6 @@
         }
 
         // TODO: 필드 위 모든 몬스터 3초 기절
+        SpecialSkillLevel.UpdateLevel(3);
     }
 }

@@ -67,6 +67,8 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
         }
         else {
             GestureDrawn?.Invoke(gestureType);
+            // TODO: 몬스터 제거 시 발동으로 바꿔야 함
+            SpecialSkillLevel.UpdateLevel(1);
         }
     }
 
