@@ -19,7 +19,10 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
     private int gestureCount;
 
     [SerializeField]
-    private int maxPoint;
+    private int maxHp;
+
+    [SerializeField]
+    private int maxSp;
 
     [SerializeField]
     private float timerDuration;
@@ -37,14 +40,14 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
 
     private readonly Queue<GestureType> gesturesToMatch = new Queue<GestureType>();
 
-    public bool IsFullHp => hp >= maxPoint;
+    public bool IsFullHp => hp >= maxHp;
     public int GestureCount => gestureCount;
 
     public int Sp { get; private set; }
 
     private void Awake() {
-        hp = maxPoint;
-        Sp = maxPoint;
+        hp = maxHp;
+        Sp = maxSp;
     }
 
     public void ProcessGesture(GestureType gestureType) {
@@ -82,7 +85,7 @@ public class PlayerCharacterController : SingletonObject<PlayerCharacterControll
     }
 
     public void Heal(int amount) {
-        hp = Mathf.Clamp(hp + amount, hp, maxPoint);
+        hp = Mathf.Clamp(hp + amount, hp, maxHp);
     }
 
     public void ApplyProtection() {
