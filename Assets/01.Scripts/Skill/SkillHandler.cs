@@ -55,6 +55,7 @@ public class SkillHandler : MonoBehaviour {
         AddNormalSkill(new HeartSkill());
         AddNormalSkill(new ClockSkill());
         AddNormalSkill(new StarSkill());
+        AddNormalSkill(new CircleSkill());
 
         AddSpecialSkill(new AdrenalineSkill());
         AddSpecialSkill(new SlaughterSkill());
